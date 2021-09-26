@@ -86,28 +86,28 @@ $('.slider_favorite').slick({
     dots: false,
 });
 
-    // 画像リスト
-    var pathList_favorite = [
-        "item_0004.jpg",
-        "item_0005.jpg",
-        "item_0006.jpg",
-        "item_0002.jpg",
-        "item_0003.jpg",
-    ];
+// 画像リスト
+var pathList_favorite = [
+    "item_0004.jpg",
+    "item_0005.jpg",
+    "item_0006.jpg",
+    "item_0002.jpg",
+    "item_0003.jpg",
+];
 
-    // 配列
-    var img_favorite = new Array();
-    for (var i = 0; i < pathList_favorite.length; i++) {
-        var image_favorite = new Image();
-        image_favorite.src = pathList_favorite[i];
-        img_favorite.push(image_favorite);
-    }
+// 配列
+var img_favorite = new Array();
+for (var i = 0; i < pathList_favorite.length; i++) {
+    var image_favorite = new Image();
+    image_favorite.src = pathList_favorite[i];
+    img_favorite.push(image_favorite);
+}
 
-    document.getElementById("favorite_img_1").src = img_favorite[0].src;
-    document.getElementById("favorite_img_2").src = img_favorite[1].src;
-    document.getElementById("favorite_img_3").src = img_favorite[2].src;
-    document.getElementById("favorite_img_4").src = img_favorite[3].src;
-    document.getElementById("favorite_img_5").src = img_favorite[4].src;
+document.getElementById("favorite_img_1").src = img_favorite[0].src;
+document.getElementById("favorite_img_2").src = img_favorite[1].src;
+document.getElementById("favorite_img_3").src = img_favorite[2].src;
+document.getElementById("favorite_img_4").src = img_favorite[3].src;
+document.getElementById("favorite_img_5").src = img_favorite[4].src;
 
 /*==================================================
 スライド（注文履歴）
@@ -133,22 +133,21 @@ $('.slider_history').slick({
     // variableWidth: true,
 });
 
-if (window.matchMedia('(min-width: 1025px)').matches) {
-    // 画像リスト
-    var pathList_history = [
-        "item_0004.jpg",
-    ];
 
-    // 配列
-    var img_history = new Array();
-    for (var i = 0; i < pathList_history.length; i++) {
-        var image_history = new Image();
-        image_history.src = pathList_history[i];
-        img_history.push(image_history);
-    }
+// 画像リスト
+var pathList_history = [
+    "item_0004.jpg",
+];
 
-    document.getElementById("history_img_1").src = img_history[0].src;
+// 配列
+var img_history = new Array();
+for (var i = 0; i < pathList_history.length; i++) {
+    var image_history = new Image();
+    image_history.src = pathList_history[i];
+    img_history.push(image_history);
 }
+
+document.getElementById("history_img_1").src = img_history[0].src;
 
 /*==================================================
 スライド（トレンド）
@@ -172,30 +171,28 @@ $('.slider_trend').slick({
     // variableWidth: true,
 });
 
-if (window.matchMedia('(min-width: 1025px)').matches) {
-    // 画像リスト
-    var pathList_trend = [
-        "item_0004.jpg",
-        "item_0005.jpg",
-        "item_0006.jpg",
-        "item_0002.jpg",
-        "item_0003.jpg",
-    ];
+// 画像リスト
+var pathList_trend = [
+    "item_0004.jpg",
+    "item_0005.jpg",
+    "item_0006.jpg",
+    "item_0002.jpg",
+    "item_0003.jpg",
+];
 
-    // 配列
-    var img_trend = new Array();
-    for (var i = 0; i < pathList_trend.length; i++) {
-        var image_trend = new Image();
-        image_trend.src = pathList_trend[i];
-        img_trend.push(image_trend);
-    }
-
-    document.getElementById("trend_img_1").src = img_trend[0].src;
-    document.getElementById("trend_img_2").src = img_trend[1].src;
-    document.getElementById("trend_img_3").src = img_trend[2].src;
-    document.getElementById("trend_img_4").src = img_trend[3].src;
-    document.getElementById("trend_img_5").src = img_trend[4].src;
+// 配列
+var img_trend = new Array();
+for (var i = 0; i < pathList_trend.length; i++) {
+    var image_trend = new Image();
+    image_trend.src = pathList_trend[i];
+    img_trend.push(image_trend);
 }
+
+document.getElementById("trend_img_1").src = img_trend[0].src;
+document.getElementById("trend_img_2").src = img_trend[1].src;
+document.getElementById("trend_img_3").src = img_trend[2].src;
+document.getElementById("trend_img_4").src = img_trend[3].src;
+document.getElementById("trend_img_5").src = img_trend[4].src;
 
 /*==================================================
 スライド矢印押下時イベント（お気に入り、注文履歴、トレンド）
