@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="GALEの公式サイトです">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>公式サイト-GALE-</title>
+    <!-- CSS 読込 -->
+    <link rel="stylesheet" href="../css/item.css">
+    <!-- slick CSS 読込 -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <!-- Font Awesome5 導入 -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <div id="header"></div>
+    </header>
+
+    <!-- メインアイテム -->
+    <div class="main-item">
+        <img src="../img/item_0001.jpg" alt="商品画像">
+        <div class="item-details">
+            <!-- 商品名 -->
+            <h1>NANCHARA PAKER</h1>
+            <h2 class="sp_itemName">ナンチャラ<br>パーカー</h2>
+            <h2 class="pc_itemName">ナンチャラパーカー</h2>
+            <!-- サイズ -->
+            <div class="size-area">
+                <h3 id="size-text">Size</h3>
+                <div class="size-button">
+                    <input type="radio" name="size" value="2" id="s" checked="checked">
+                    <label for="s">S</label>S
+                    <input type="radio" name="size" value="3" id="m">
+                    <label for="m">M</label>M
+                    <input type="radio" name="size" value="4" id="l">
+                    <label for="l">L</label>L
+                </div>
+            </div>
+            <!-- カラー -->
+            <div class="culor-area">
+                <h4 id="culor-text">Color</h4>
+                <div class="culor-button">
+                    <input type="radio" name="culor" value="1" id="white" checked="checked">
+                    <label for="white"></label>
+                    <input type="radio" name="culor" value="2" id="gray">
+                    <label for="gray"></label>
+                    <input type="radio" name="culor" value="3" id="black">
+                    <label for="black"></label>
+                </div>
+            </div>
+            <!-- 価格 -->
+            <h5>¥4,000</h5>
+            <!-- アイテム説明 -->
+            <p>抜群の着こなし性能と、スタンダードでオーソドックス
+                <br>な人気のアイテム。季節を選ばず使える一着です。
+            </p>
+            <!-- カートに入れる・お気に入りボタン -->
+            <div class="item-button">
+                <button onclick="location.href=''">カートに入れる</button>
+                <div class="heart-icon">
+                    <i class="far fa-heart" id="heart-before"></i>
+                    <i class="fas fa-heart" id="heart-after"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- アイテム詳細スライド -->
+    <ul class="slider">
+        <li><img src="../img/item_0001.jpg" alt=""></li>
+        <li><img src="../img/item_0003.jpg" alt=""></li>
+        <li><img src="../img/item_0002.jpg" alt=""></li>
+    </ul>
+
+    <!-- お気に入り -->
+    <div class="title" id="title-favorite">
+        <h1>FAVORITE</h1>
+        <h2>お気に入りの商品</h2>
+    </div>
+    <ul class="slider_favorite">
+        <li><img id="favorite_img_1"></li>
+        <li><img id="favorite_img_2"></li>
+        <li><img id="favorite_img_3"></li>
+        <li><img id="favorite_img_4"></li>
+        <li><img id="favorite_img_5"></li>
+    </ul>
+
+    <!-- 注文履歴 -->
+    <div class="title" id="title-history">
+        <h1>HISTORY</h1>
+        <h2>過去に見た商品・再注文</h2>
+    </div>
+    <ul class="slider_history">
+        <li><img id="history_img_1" onclick="location.href='item.html'"></li>
+        <li><img id="history_img_2" onclick="location.href='item.html'"></li>
+        <li><img id="history_img_3" onclick="location.href='item.html'"></li>
+        <li><img id="history_img_4" onclick="location.href='item.html'"></li>
+        <li><img id="history_img_5" onclick="location.href='item.html'"></li>
+    </ul>
+
+    <!-- トレンド -->
+    <div class="title">
+        <h1>TREND</h1>
+        <h2>季節のトレンド</h2>
+    </div>
+
+    <!-- 商品画像① -->
+    <div class="item-pr">
+        <img onclick="location.href='item.html'" src="../img/item_0001.jpg" alt="商品画像">
+        <div class="item-trend">
+            <!-- 商品名 -->
+            <h1>NANCHARAPAKER</h1>
+            <h2>ナンチャラパーカー</h2>
+            <!-- 価格 -->
+            <h3>¥4,000</h3>
+            <!-- アイテム説明 -->
+            <p>抜群の着こなし性能と、スタンダードでオーソドックスな人気のアイテム。
+                <br>季節を選ばず使える一着です。
+            </p>
+        </div>
+    </div>
+
+    <!-- 商品画像② -->
+    <div class="item-pr">
+        <img onclick="location.href='item.html'" src="../img/item_0005.jpg" alt="商品画像">
+        <div class="item-trend">
+            <!-- 商品名 -->
+            <h1>NANCHARAPAKER</h1>
+            <h2>ナンチャラパーカー</h2>
+            <!-- 価格 -->
+            <h3>¥4,000</h3>
+            <!-- アイテム説明 -->
+            <p>抜群の着こなし性能と、スタンダードでオーソドックスな人気のアイテム。
+                <br>季節を選ばず使える一着です。
+            </p>
+        </div>
+    </div>
+
+    <ul class="slider_trend">
+        <li><img id="trend_img_1" onclick="location.href='item.html'"></li>
+        <li><img id="trend_img_2" onclick="location.href='item.html'"></li>
+        <li><img id="trend_img_3" onclick="location.href='item.html'"></li>
+        <li><img id="trend_img_4" onclick="location.href='item.html'"></li>
+        <li><img id="trend_img_5" onclick="location.href='item.html'"></li>
+    </ul>
+
+
+    <!-- フッター -->
+    <footer>
+        <div id="footer"></div>
+    </footer>
+
+    <!-- js読み込み -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- item.js 読み込み -->
+    <script type="text/javascript" src="../jsc/item.js"></script>
+</body>
+
+</html>
