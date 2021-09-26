@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="GALEの公式サイトです">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- CSS 読込 -->
+    <link rel="stylesheet" href="../css/common/header.css">
+    <!-- Font Awesome5 導入 -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <div class="header-icon">
+            <img class="gale-icon" src="../img/GALE_icon_white.png" alt="GALEの公式ロゴ">
+            <div class="menu-tab">
+                <li><a href="favorite.html"><span>FAVORITE</span><span>お気に入り</span></a></li>
+                <li><a href="history.html"><span>HISTORY</span><span>注文履歴</span></a></li>
+                <li><a href="trend.html"><span>TREND</span><span>流行商品</span></a></li>
+            </div>
+            <img class="login-icon" src="../img/login.png" alt="ログイン">
+            <img class="cart-icon" src="../img/cart-icon.jpg" alt="カート">
+        </div>
+        <div id="search-form">
+            <form>
+                <input type="text" id="form-text" placeholder="検索">
+                <input type="submit" id="form-button" value="">
+            </form>
+        </div>
+    </header>
+
+    <!-- ハンバーガーメニュー -->
+    <div id="menu-area">
+        <nav>
+            <div class="menu-inner">
+                <ul>
+                    <li><a href="favorite.html">お気に入り</a></li>
+                    <li><a href="history.html">注文履歴</a></li>
+                    <li><a href="trend.html">流行商品</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="menu_btn"><span></span><span></span><span></span></div>
+        <div id="mask"></div>
+    </div>
+
+    <!-- 検索画面 -->
+    <div id="search-area">
+        <nav>
+            <div class="search-inner">
+                <!-- 検索フォーム -->
+                <div id="search-area-form">
+                    <form role="search" method="get" action="">
+                        <input type="text" id="search-text" value="" placeholder="検索">
+                        <input type="submit" id="search-button" value="">
+                    </form>
+                </div>
+                <!-- カテゴリー -->
+                <div class="category">
+                    <ul>
+                        <li><a href="#">Tシャツ</a></li>
+                        <li><a href="#">ボトムス</a></li>
+                        <li><a href="#">パーカー</a></li>
+                        <li><a href="#">キャップ</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Tシャツ</a></li>
+                        <li><a href="#">ボトムス</a></li>
+                        <li><a href="#">パーカー</a></li>
+                        <li><a href="#">キャップ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="close_btn"><span></span><span></span><span></span></div>
+        </nav>
+    </div>
+
+    <!-- js 読み込み -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- header.js 読み込み -->
+    <script type="text/javascript" src="../jsc/common/header.js"></script>
+</body>
+
+</html>
