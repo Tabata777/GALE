@@ -86,7 +86,6 @@ $('.slider_favorite').slick({
     dots: false,
 });
 
-if (window.matchMedia('(min-width: 1025px)').matches) {
     // 画像リスト
     var pathList_favorite = [
         "item_0004.jpg",
@@ -109,7 +108,6 @@ if (window.matchMedia('(min-width: 1025px)').matches) {
     document.getElementById("favorite_img_3").src = img_favorite[2].src;
     document.getElementById("favorite_img_4").src = img_favorite[3].src;
     document.getElementById("favorite_img_5").src = img_favorite[4].src;
-}
 
 /*==================================================
 スライド（注文履歴）
