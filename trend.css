@@ -1,0 +1,724 @@
+/*==================================================
+全体設定
+==================================================*/
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    html {
+        /* 文字サイズ10px(1rem) */
+        font-size: 62.5%;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    html {
+        /* 文字サイズ15px(1rem) */
+        font-size: 93.75%;
+    }
+}
+
+body {
+    /* 文字色 */
+    color: #2f2f2f;
+    /* 上下左右の余白 */
+    margin: 0;
+}
+
+
+/*==================================================
+トレンド（トップ）
+==================================================*/
+
+
+/* 全体 */
+
+.trend-main {
+    /* 上下左右の余白 */
+    margin: 0 0 5vw;
+}
+
+
+/* 背景画像 */
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    .main-back {
+        /* 中央揃え */
+        background-position: center;
+        /* サイズ */
+        width: 100%;
+        height: 30vh;
+        /* アスペクト比を維持 */
+        object-fit: cover;
+        /* 上下左右の余白 */
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .main-back {
+        /* 中央揃え */
+        background-position: center;
+        /* サイズ */
+        width: 100%;
+        height: 60vh;
+        /* アスペクト比を維持 */
+        object-fit: cover;
+        /* 上下左右の余白 */
+        margin: 0;
+    }
+}
+
+
+/* 背景画像透過設定 */
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    .trend-main::before {
+        /* 透過した黒を上から重ねる */
+        background-color: rgba(0, 0, 0, 0.400);
+        /* 絶対配置 */
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        /* サイズ */
+        width: 100%;
+        height: 30vh;
+        /* コンテンツ挿入 */
+        content: ' ';
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .trend-main::before {
+        /* 透過した黒を上から重ねる */
+        background-color: rgba(0, 0, 0, 0.400);
+        /* 絶対配置 */
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        /* サイズ */
+        width: 100%;
+        height: 60vh;
+        /* コンテンツ挿入 */
+        content: ' ';
+    }
+}
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    .trend-title {
+        /* 絶対配置 */
+        position: absolute;
+        top: 20vh;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        /* 中央揃え */
+        text-align: center;
+        /* 文字色 */
+        color: #ffffff;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .trend-title {
+        /* 絶対配置 */
+        position: absolute;
+        top: 35vh;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        /* 中央揃え */
+        text-align: center;
+        /* 文字色 */
+        color: #ffffff;
+    }
+}
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    .trend-title h1 {
+        /* フォント */
+        font-family: Impact, 'Arial Narrow Bold', sans-serif;
+        /* 文字サイズ */
+        font-size: 8vw;
+        /* 行間隔 */
+        line-height: 0;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .trend-title h1 {
+        /* フォント */
+        font-family: Impact, 'Arial Narrow Bold', sans-serif;
+        /* 文字サイズ */
+        font-size: 8vw;
+        /* 行間隔 */
+        line-height: 0;
+    }
+}
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    .trend-title h2 {
+        /* 文字サイズ */
+        font-size: 3vw;
+        /* 行間隔 */
+        line-height: 3vw;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .trend-title h2 {
+        /* 文字サイズ */
+        font-size: 1.5vw;
+        /* 行間隔 */
+        line-height: 0;
+    }
+}
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    .trend-title h3 {
+        /* 文字サイズ */
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .trend-title h3 {
+        /* 文字サイズ */
+        font-size: 2vw;
+    }
+}
+
+
+/*==================================================
+トレンド商品
+==================================================*/
+
+
+/* 各商品_エリア */
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    .trend-item {
+        /* 並行配置 */
+        display: flex;
+        /* 黒点削除 */
+        list-style: none;
+        /* 不要な余白の削除 */
+        line-height: 0;
+        /* 幅 */
+        width: 90vw;
+        /* 下の内幅 */
+        padding-bottom: 5vw;
+        /* 上下左右の余白 */
+        margin: 0 auto 5vw;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .trend-item {
+        /* 並行配置 */
+        display: flex;
+        /* 黒点削除 */
+        list-style: none;
+        /* 不要な余白の削除 */
+        line-height: 0;
+        /* 幅 */
+        width: 90vw;
+        padding-bottom: 3vw;
+        /* 上下左右の余白 */
+        margin: 0 auto 3vw;
+    }
+}
+
+
+/* 各商品_画像 */
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    #pc-img {
+        /* 非表示 */
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    #sp-img {
+        /* 非表示 */
+        display: none;
+    }
+}
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    .trend-item img {
+        /* サイズ */
+        width: 50vw;
+        height: auto;
+        /* 上下左右の余白 */
+        margin: 0;
+        /* マウスカーソルを指マークに */
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .trend-item img {
+        /* サイズ */
+        width: 55vw;
+        height: auto;
+        /* 上下左右の余白 */
+        margin: 0;
+        /* マウスカーソルを指マークに */
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    #trend-item2 img {
+        position: relative;
+        left: 40vw;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    #trend-item2 img {
+        position: relative;
+        left: 35vw;
+    }
+}
+
+
+/* 商品詳細 */
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    .trend-details {
+        /* 絶対配置 */
+        position: absolute;
+        right: 5vw;
+        /* サイズ */
+        width: 50vw;
+        height: auto;
+        /* 上下左右の余白 */
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .trend-details {
+        /* 絶対配置 */
+        position: absolute;
+        right: 5vw;
+        /* サイズ */
+        width: 42vw;
+        height: auto;
+        /* 上下左右の余白 */
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    #trend-details2 {
+        /* 優先表示順 */
+        z-index: 1;
+        /* 絶対配置 */
+        left: 5vw;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    #trend-details2 {
+        /* 優先表示順 */
+        z-index: 1;
+        /* 絶対配置 */
+        left: 5vw;
+    }
+}
+
+
+/* 商品名 */
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    .trend-item h1 {
+        /* フォント */
+        font-family: Impact, 'Arial Narrow Bold', sans-serif;
+        /* 太字 */
+        font-weight: bold;
+        /* 文字サイズ */
+        font-size: 7vw;
+        /* 左揃え */
+        text-align: left;
+        /* 行間隔 */
+        line-height: 8.5vw;
+        /* 上下左右の余白 */
+        margin: 0 0 2.5vw;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .trend-item h1 {
+        /* フォント */
+        font-family: Impact, 'Arial Narrow Bold', sans-serif;
+        /* 太字 */
+        font-weight: bold;
+        /* 文字サイズ */
+        font-size: 8.5vw;
+        /* 左揃え */
+        text-align: left;
+        /* 行間隔 */
+        line-height: 8.5vw;
+        /* 上下左右の余白 */
+        margin: 0 0 2.5vw;
+    }
+}
+
+
+/* 商品名カナ */
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    .trend-item h2 {
+        /* 文字サイズ */
+        font-size: 2.5vw;
+        /* 左揃え */
+        text-align: left;
+        /* 行間隔 */
+        line-height: 0;
+        /* 上下左右の余白 */
+        margin: 0 0 8vw;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .trend-item h2 {
+        /* 文字サイズ */
+        font-size: 2vw;
+        /* 左揃え */
+        text-align: left;
+        /* 行間隔 */
+        line-height: 0;
+        /* 上下左右の余白 */
+        margin: 0 0 6vw;
+    }
+}
+
+
+/* 各商品詳細_説明文 */
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    .trend-item p {
+        /* 文字サイズ */
+        font-size: 2.5vw;
+        /* 行間隔 */
+        line-height: 4vw;
+        /* 上下左右の余白 */
+        margin: 0 0 8vw;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .trend-item p {
+        /* 文字サイズ */
+        font-size: 2vw;
+        /* 行間隔 */
+        line-height: 2.5vw;
+        /* 上下左右の余白 */
+        margin: 0 0 8vw;
+    }
+}
+
+
+/*==================================================
+タイトル（お気に入り、注文履歴）
+==================================================*/
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    /* タイトル_エリア */
+    .title {
+        /* 上下左右の余白 */
+        margin: 0 auto 5vw;
+    }
+    /* タイトル_文言1 */
+    .title h1 {
+        /* フォント */
+        font-family: Impact, 'Arial Narrow Bold', sans-serif;
+        /* 中央揃え */
+        text-align: center;
+        /* 文字サイズ */
+        font-size: 7vw;
+        /* 文字下線 */
+        text-decoration: underline;
+        /* 上下左右の余白 */
+        margin: 0;
+    }
+    /* タイトル_文言2 */
+    .title h2 {
+        /* 中央揃え */
+        text-align: center;
+        /* 行間隔 */
+        line-height: 3vw;
+        /* 文字サイズ */
+        font-size: 3vw;
+        /* 上下左右の余白 */
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    /* タイトル_エリア */
+    .title {
+        /* 相対配置 */
+        position: relative;
+        top: 0;
+        /* 上下左右の余白 */
+        margin: 0 auto 1rem;
+    }
+    /* タイトル_文言1 */
+    .title h1 {
+        /* フォント */
+        font-family: Impact, 'Arial Narrow Bold', sans-serif;
+        /* 中央揃え */
+        text-align: center;
+        /* 文字サイズ */
+        font-size: 4vw;
+        /* 文字下線 */
+        text-decoration: underline;
+        /* 上下左右の余白 */
+        margin: 0;
+    }
+    /* タイトル_文言2 */
+    .title h2 {
+        /* 中央揃え */
+        text-align: center;
+        /* 文字サイズ */
+        font-size: 1.5vw;
+        /* 上下左右の余白 */
+        margin: 0;
+    }
+}
+
+
+/*==================================================
+商品（お気に入り、注文履歴）
+==================================================*/
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    /* 全体 */
+    .item-pr {
+        /* 並行配置 */
+        display: flex;
+        /* 相対位置 */
+        position: relative;
+        top: 0;
+        /* 横幅 */
+        width: 90vw;
+        /* 上下左右の余白 */
+        margin: 0 auto 5vw;
+    }
+    /* 商品画像 */
+    .item-pr img {
+        /* 画像サイズ */
+        width: 35vw;
+        height: auto;
+        /* 上下左右の余白 */
+        margin: 0 auto;
+        /* アスペクト比を維持 */
+        object-fit: cover;
+        /* マウスカーソルを指マークに */
+        cursor: pointer;
+    }
+    /* 商品詳細エリア */
+    .item-details {
+        /* 幅 */
+        width: 45vw;
+        /* 上下左右の余白 */
+        margin: 0 auto 0 0;
+    }
+    /* 商品名英字 */
+    .item-details h1 {
+        /* フォント */
+        font-family: Impact, 'Arial Narrow Bold', sans-serif;
+        /* 文字サイズ */
+        font-size: 4vw;
+        /* 行間隔 */
+        line-height: 6vw;
+        /* 下線 */
+        text-decoration: underline;
+        /* 幅 */
+        width: auto;
+        /* 上下左右の余白 */
+        margin: 0;
+    }
+    /* 商品名カナ */
+    .item-details h2 {
+        /* フォント */
+        font-family: Impact, 'Arial Narrow Bold', sans-serif;
+        /* 文字サイズ */
+        font-size: 2.5vw;
+        /* 行間隔 */
+        line-height: 4vw;
+        /* 幅 */
+        width: 100%;
+        /* 上下左右の余白 */
+        margin: 0 0 7vw;
+    }
+    /* 価格 */
+    .item-details h3 {
+        /* 文字サイズ */
+        font-size: 5vw;
+        /* 不要な余白を削除 */
+        line-height: 0;
+        /* 上下左右の余白 */
+        margin: 0 0 7vw;
+    }
+    /* 商品説明文 */
+    .item-details p {
+        /* 文字サイズ */
+        font-size: 2.5vw;
+        /* 上下左右の余白 */
+        margin: 0;
+    }
+    /* 遷移ボタン */
+    .etc-item-btn {
+        /* 幅 */
+        width: 100%;
+        /* 中横揃え */
+        text-align: center;
+    }
+    .etc-item-btn button {
+        /* 背景色 */
+        background-color: #4f4f4f;
+        /* 文字色 */
+        color: #ffffff;
+        /* 文字サイズ */
+        font-size: 4vw;
+        /* ボタン形状 */
+        border-radius: 10px;
+        /* 幅 */
+        width: 60%;
+        /* 上下左右の内幅 */
+        padding: 3vw 0;
+        /* 上下左右の余白 */
+        margin: 0 auto 2vw;
+        /* マウスカーソルを指マークに */
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .item-pr {
+        /* 非表示 */
+        display: none;
+    }
+    .etc-item-btn {
+        /* 非表示 */
+        display: none;
+    }
+}
+
+
+/*==================================================
+スライド（お気に入り、注文履歴）
+==================================================*/
+
+
+/* 全体設定 */
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    .slider_favorite,
+    .slider_history {
+        /* 非表示 */
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    /* 全体設定 */
+    .slider_favorite,
+    .slider_history {
+        /* 横幅 */
+        width: 94vw;
+        /* 上下左右の余白 */
+        margin: 0 auto 5vw;
+        /* 上下左右の内幅 */
+        padding: 0;
+        /* 黒点削除 */
+        list-style: none;
+    }
+    /* 画像 */
+    .slider_favorite img,
+    .slider_history img {
+        /* 画像サイズ */
+        width: 100%;
+        height: auto;
+        /* マウスカーソルを指マークに */
+        cursor: pointer;
+    }
+    /* スライド左右の余白調整 */
+    .slider_favorite .slick-slide,
+    .slider_history .slick-slide {
+        /* 拡大や透過のアニメーションを0.5秒で実行 */
+        transition: all .5s;
+        /* 上下左右の余白 */
+        margin: 0 10px;
+    }
+    /* 矢印共通設定 */
+    .slick-prev-favorite,
+    .slick-next-favorite,
+    .slick-prev-history,
+    .slick-next-history {
+        /* 優先表示順 */
+        z-index: 1;
+        /* 押下時のイベントを削除 */
+        pointer-events: none;
+        /* 絶対配置 */
+        position: absolute;
+        top: 45%;
+        /* 枠線（上） */
+        border-top: 0.3rem solid #efefef;
+        /* 枠線（右） */
+        border-right: 0.3rem solid #efefef;
+        /* 押下時の枠線削除 */
+        outline: none;
+        /* 矢印サイズ */
+        width: 3vw;
+        height: 3vw;
+    }
+    /* 矢印（前へ） */
+    .slick-prev-favorite,
+    .slick-prev-history {
+        /* 位置 */
+        left: -2%;
+        /* 形状 */
+        transform: rotate(-135deg);
+    }
+    /* 矢印（次へ） */
+    .slick-next-favorite,
+    .slick-next-history {
+        /*マウスカーソルを指マークに*/
+        cursor: pointer;
+        /* 位置 */
+        right: -2%;
+        /* 形状 */
+        transform: rotate(45deg);
+    }
+    /* 矢印（前へ）押下時 */
+    .slick-prev-favorite.reveal,
+    .slick-prev-history.reveal {
+        /* 押下時のイベントを削除 */
+        pointer-events: auto;
+        /*マウスカーソルを指マークに*/
+        cursor: pointer;
+        /* 枠線（上） */
+        border-top: 0.3rem solid #6f6f6f;
+        /* 枠線（右） */
+        border-right: 0.3rem solid #6f6f6f;
+    }
+    /* 矢印（次へ）押下時 */
+    .slick-next-favorite.reveal,
+    .slick-next-history.reveal {
+        /* 押下時のイベントを削除 */
+        pointer-events: auto;
+        /*マウスカーソルを指マークに*/
+        cursor: inherit;
+        /* 枠線（上） */
+        border-top: 0.3rem solid #6f6f6f;
+        /* 枠線（右） */
+        border-right: 0.3rem solid #6f6f6f;
+    }
+}
