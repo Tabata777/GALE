@@ -1,0 +1,553 @@
+/*==================================================
+全体設定
+==================================================*/
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
+    html {
+        /* 文字サイズ10px(1rem) */
+        font-size: 62.5%;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    /* 画面サイズが1025px以上の場合に適用（PC版） */
+    html {
+        /* 文字サイズ15px(1rem) */
+        font-size: 93.75%;
+    }
+}
+
+body {
+    width: 100%;
+    /* 文字色 */
+    color: #2f2f2f;
+    /* 上下左右の余白 */
+    margin: 0;
+}
+
+
+/*==================================================
+メインビジュアル
+==================================================*/
+
+
+/* スライダー設定 */
+
+.slider {
+    /* 相対配置 */
+    position: relative;
+    /* 幅 */
+    width: 100%;
+    /* 上下左右の余白 */
+    margin: 0 auto 5vw auto;
+}
+
+
+/* スライダー画像 */
+
+.slider img {
+    /* サイズ */
+    width: 100%;
+    height: 100vh;
+    /* アスペクト比を維持 */
+    object-fit: cover;
+}
+
+
+/* 矢印共通設定 */
+
+.slick-prev,
+.slick-next {
+    /* 優先表示順 */
+    z-index: 1;
+    /* 押下時の枠線削除 */
+    outline: none;
+    /*マウスカーソルを指マークに*/
+    cursor: pointer;
+    /* 枠線（上） */
+    border-top: 0.3rem solid #2f2f2f;
+    /* 枠線（右） */
+    border-right: 0.3rem solid #2f2f2f;
+    /* 絶対配置 */
+    position: absolute;
+    top: 45%;
+    /* サイズ */
+    width: 2rem;
+    height: 2rem;
+}
+
+
+/* 戻る矢印 */
+
+.slick-prev {
+    /* 位置 */
+    left: 3%;
+    /* 形状 */
+    transform: rotate(-135deg);
+}
+
+
+/* 次へ矢印 */
+
+.slick-next {
+    /* 位置 */
+    right: 3%;
+    /* 形状 */
+    transform: rotate(45deg);
+}
+
+
+/*ドット共通設定*/
+
+.slick-dots {
+    /* 中央揃え */
+    text-align: center;
+    /* 絶対配置 */
+    position: absolute;
+    bottom: 5px;
+    /* 幅 */
+    width: 100%;
+    /* 上下左右の内幅 */
+    padding: 0;
+    /* 上下左右の余白 */
+    margin: 0;
+}
+
+
+/* ドット間隔 */
+
+.slick-dots li {
+    /* インラインブロック要素に設定 */
+    display: inline-block;
+    /* ドット間の余白 */
+    margin: 0 0.5rem;
+}
+
+
+/* ドット見た目 */
+
+.slick-dots button {
+    /* 背景色 */
+    background: #c0c0c0;
+    /* 文字を透過 */
+    color: transparent;
+    /* 押下時の枠線 */
+    outline: none;
+    /* 枠線 */
+    border-style: none;
+    /* 形状 */
+    border-radius: 10px;
+    /* サイズ */
+    width: 2rem;
+    height: 0.5rem;
+    /* 上下左右の余白 */
+    margin: 0;
+}
+
+
+/* ドット現在地 */
+
+.slick-dots .slick-active button {
+    /* 背景色 */
+    background: #2f2f2f;
+}
+
+
+/*==================================================
+TREND
+==================================================*/
+
+.trend {
+    text-align: center;
+    /* 上下左右の余白 */
+    margin: 0 auto 2vw;
+}
+
+.trend h1 {
+    /* フォント */
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    /* 文字サイズ */
+    font-size: 5vw;
+    /* 文字下線 */
+    text-decoration: underline;
+    /* 上下左右の余白 */
+    margin: 0 auto;
+}
+
+.trend h2 {
+    /* 文字サイズ */
+    font-size: 1.5vw;
+    /* 上下左右の余白 */
+    margin: 0 auto;
+}
+
+
+/*==================================================
+商品画像①②
+==================================================*/
+
+
+/* 全体 */
+
+.item-pr {
+    /* 並行配置 */
+    display: flex;
+    /* 相対位置 */
+    position: relative;
+    top: 0;
+    /* 横幅 */
+    width: 90vw;
+    /* 上下左右の余白 */
+    margin: 0 auto 3vw;
+}
+
+
+/* 商品画像 */
+
+.item-pr img {
+    /* 画像サイズ */
+    width: 35vw;
+    height: auto;
+    /* 上下左右の余白 */
+    margin: 0 auto;
+    /* アスペクト比を維持 */
+    object-fit: cover;
+    /*マウスカーソルを指マークに*/
+    cursor: pointer;
+}
+
+
+/* 商品詳細エリア */
+
+.item-details {
+    /* 幅 */
+    width: 45vw;
+    /* 上下左右の余白 */
+    margin: 0 auto 0 0;
+}
+
+
+/* 商品名英字 */
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
+    .item-details h1 {
+        /* フォント */
+        font-family: Impact, 'Arial Narrow Bold', sans-serif;
+        /* 文字サイズ */
+        font-size: 6vw;
+        /* 行間隔 */
+        line-height: 6vw;
+        /* 幅 */
+        width: 100%;
+        /* 上下左右の余白 */
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    /* 画面サイズが1025px以上の場合に適用（PC版） */
+    .item-details h1 {
+        /* フォント */
+        font-family: Impact, 'Arial Narrow Bold', sans-serif;
+        /* 文字サイズ */
+        font-size: 8vw;
+        /* 行間隔 */
+        line-height: 8vw;
+        /* 幅 */
+        width: 100%;
+        /* 上下左右の余白 */
+        margin: 0;
+    }
+}
+
+
+/* 商品名カナ */
+
+.item-details h2 {
+    /* フォント */
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    /* 文字サイズ */
+    font-size: 2.5vw;
+    /* 行間隔 */
+    line-height: 2.5vw;
+    /* 幅 */
+    width: 100%;
+    /* 上下左右の余白 */
+    margin: 0 0 6vw;
+}
+
+
+/* 価格 */
+
+.item-details h3 {
+    /* 文字サイズ */
+    font-size: 5vw;
+    /* 不要な余白を削除 */
+    line-height: 0;
+    /* 上下左右の余白 */
+    margin: 0 0 6vw;
+}
+
+
+/* 商品説明文 */
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
+    .item-details p {
+        /* 文字サイズ */
+        font-size: 2.5vw;
+        /* 上下左右の余白 */
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    /* 画面サイズが1025px以上の場合に適用（PC版） */
+    .item-details p {
+        /* 文字サイズ */
+        font-size: 2vw;
+        /* 上下左右の余白 */
+        margin: 0;
+    }
+}
+
+
+/*==================================================
+History
+==================================================*/
+
+
+/* 全体設定 */
+
+.History {
+    /* 相対配置 */
+    position: relative;
+    /* サイズ */
+    width: 100%;
+    /* 黒点削除 */
+    list-style: none;
+    /* 上下左右の余白 */
+    margin: 0 0 3vw;
+}
+
+
+/* 画像 */
+
+.History img {
+    /* 上下左右の余白 */
+    margin: 0;
+    /* サイズ */
+    width: 100%;
+    height: auto;
+    /*マウスカーソルを指マークに*/
+    cursor: pointer;
+}
+
+
+/*==================================================
+GALE概要
+==================================================*/
+
+
+/* 全体設定 */
+
+.gale-introduction {
+    /* 文字色 */
+    color: #ffffff;
+    /* 相対配置 */
+    position: relative;
+    /* 余白削除 */
+    line-height: 0;
+}
+
+.gale-details {
+    /* 絶対配置 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -52.5%);
+    /* 中央揃え */
+    text-align: center;
+    /* 幅 */
+    width: 100%;
+}
+
+
+/* タイトル */
+
+.gale-introduction h1 {
+    /* フォント */
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    /* 文字サイズ */
+    font-size: 5rem;
+    /* 太字 */
+    font-weight: bold;
+    /* 上下左右の余白 */
+    line-height: 5rem;
+}
+
+
+/* 概要 */
+
+.introduction-text1,
+.introduction-text2 {
+    /* 文字サイズ */
+    font-size: 1.5rem;
+    /* 行間隔 */
+    line-height: 3.5rem;
+    /* 中央揃え */
+    text-align: center;
+    /* 幅 */
+    width: 100%;
+    /* 上下左右の余白 */
+    margin: 0;
+}
+
+
+/* 背景画像 */
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
+    .introduction-back {
+        /* 中央揃え */
+        background-position: center;
+        /* サイズ */
+        width: 100%;
+        height: 70vh;
+        /* アスペクト比を維持 */
+        object-fit: cover;
+        /* 上下左右の余白 */
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    /* 画面サイズが1025px以上の場合に適用（PC版） */
+    .introduction-back {
+        /* 中央揃え */
+        background-position: center;
+        /* サイズ */
+        width: 100%;
+        height: 100vh;
+        /* アスペクト比を維持 */
+        object-fit: cover;
+        /* 上下左右の余白 */
+        margin: 0;
+    }
+}
+
+
+/* 背景画像透過設定 */
+
+.gale-introduction::before {
+    /* 透過した黒を上から重ねる */
+    background-color: rgba(0, 0, 0, 0.650);
+    /* 絶対配置 */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* コンテンツ挿入 */
+    content: ' ';
+}
+
+
+/*==================================================
+Twitter・Instagram
+==================================================*/
+
+
+/* Twitter */
+
+@media screen and (min-width: 1025px) {
+    .sns-icon {
+        /* 並行配置 */
+        display: flex;
+        /* 上下左右の余白 */
+        margin: 7rem auto;
+    }
+}
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    .twitter {
+        /* 中央揃え */
+        text-align: center;
+        /* 上下左右の内幅 */
+        padding: 3rem 0;
+        /* 上下左右の余白 */
+        margin: 0 auto;
+        /* 幅 */
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .twitter {
+        /* 右枠線 */
+        border-right: solid 1px #7f7f7f;
+        /* 中央揃え */
+        text-align: center;
+        /* 上下左右の内幅 */
+        padding: 2rem 0;
+        /* 上下左右の余白 */
+        margin: auto;
+        /* 幅 */
+        width: 50%;
+    }
+}
+
+.twitter-icon {
+    /* マウスカーソルを指マークに */
+    cursor: pointer;
+    /* 中央揃え */
+    text-align: center;
+    /* 上下左右の余白 */
+    margin: 0 auto;
+    /* 幅 */
+    width: 70%;
+}
+
+
+/* Instagram */
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    .instagram {
+        /* 中央揃え */
+        text-align: center;
+        /* 上下左右の内幅 */
+        padding: 3rem 0;
+        /* 上下左右の余白 */
+        margin: 0 auto;
+        /* 幅 */
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .instagram {
+        /* 左枠線 */
+        border-left: solid 1px #7f7f7f;
+        /* 中央揃え */
+        text-align: center;
+        /* 上下左右の内幅 */
+        padding: 2rem 0;
+        /* 上下左右の余白 */
+        margin: auto;
+        /* 幅 */
+        width: 50%;
+    }
+}
+
+.instagram-icon {
+    /* マウスカーソルを指マークに */
+    cursor: pointer;
+    /* 中央揃え */
+    text-align: center;
+    /* 上下左右の余白 */
+    margin: auto;
+    /* 幅 */
+    width: 70%;
+}
