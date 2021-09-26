@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="GALEの公式サイトです">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>公式サイト-GALE-</title>
+    <!-- CSS 読込 -->
+    <link rel="stylesheet" href="../css/cart.css">
+    <!-- スライドショー 導入 -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <!-- Font Awesome5 導入 -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- ヘッダー -->
+    <header>
+        <div id="header"></div>
+    </header>
+
+    <!-- レジに進むボタン -->
+    <div class="cash-button">
+        <button onclick="location.href=''">購入に進む（カート内2件）</button>
+    </div>
+
+    <!-- カート内の商品 -->
+    <div class="cart-item">
+        <!-- 商品画像 -->
+        <img onclick="location.href='item.html'" src="../img/item_0007.jpg" alt="商品画像">
+        <div class="cart-details">
+            <h1>ナンチャラパーカー</h1>
+            <h2>シンプルで飽きの来ないパーカーです。</h2>
+            <h3>¥4,000</h3>
+            <!-- 数量・削除機能 -->
+            <div class="spinner-container">
+                <span class="spinner-sub disabled">−</span>
+                <input class="spinner" type="number" min="1" max="99" value="1">
+                <span class="spinner-add">+</span>
+                <button onclick="location.href='#'">削除</button>
+            </div>
+            <li onclick="location.href=''">類似商品を探す</li>
+        </div>
+    </div>
+
+    <div class="cart-item" id="cart-item2">
+        <!-- 商品画像 -->
+        <img onclick="location.href='item.html'" src="../img/item_0008.jpg" alt="商品画像">
+        <div class="cart-details">
+            <h1>ナンチャラパーカー</h1>
+            <h2>シンプルで飽きの来ないパーカーです。</h2>
+            <h3>¥4,000</h3>
+            <!-- 数量・削除機能 -->
+            <div class="spinner-container">
+                <span class="spinner-sub disabled">−</span>
+                <input class="spinner" type="number" min="1" max="99" value="1">
+                <span class="spinner-add">+</span>
+                <button onclick="location.href='#'">削除</button>
+            </div>
+            <li onclick="location.href=''">類似商品を探す</li>
+        </div>
+    </div>
+
+    <!-- お気に入り -->
+    <div class="title">
+        <h1>FAVORITE</h1>
+        <h2>お気に入りの商品</h2>
+    </div>
+
+    <!-- 商品画像① -->
+    <div class="item-pr">
+        <img onclick="location.href='item.html'" src="../img/item_0001.jpg" alt="商品画像">
+        <div class="item-details">
+            <!-- 商品名 -->
+            <h1>NANCHARAPAKER</h1>
+            <h2>ナンチャラパーカー</h2>
+            <!-- 価格 -->
+            <h3>¥4,000</h3>
+            <!-- アイテム説明 -->
+            <p>抜群の着こなし性能と、スタンダードでオーソドックスな人気のアイテム。
+                <br>季節を選ばず使える一着です。
+            </p>
+        </div>
+    </div>
+
+    <!-- 商品画像② -->
+    <div class="item-pr">
+        <img onclick="location.href='item.html'" src="../img/item_0005.jpg" alt="商品画像">
+        <div class="item-details">
+            <!-- 商品名 -->
+            <h1>NANCHARAPAKER</h1>
+            <h2>ナンチャラパーカー</h2>
+            <!-- 価格 -->
+            <h3>¥4,000</h3>
+            <!-- アイテム説明 -->
+            <p>抜群の着こなし性能と、スタンダードでオーソドックスな人気のアイテム。
+                <br>季節を選ばず使える一着です。
+            </p>
+        </div>
+    </div>
+
+    <div class="etc-item-btn">
+        <button onclick="location.href='favorite.html'">他のアイテムを見る</button>
+    </div>
+
+    <ul class="slider_favorite">
+        <li><img onclick="location.href='item.html'" id="favorite_img_1"></li>
+        <li><img onclick="location.href='item.html'" id="favorite_img_2"></li>
+        <li><img onclick="location.href='item.html'" id="favorite_img_3"></li>
+        <li><img onclick="location.href='item.html'" id="favorite_img_4"></li>
+        <li><img onclick="location.href='item.html'" id="favorite_img_5"></li>
+    </ul>
+
+    <!-- 注文履歴 -->
+    <div class="title">
+        <h1>HISTORY</h1>
+        <h2>過去に見た商品・再注文</h2>
+    </div>
+
+    <!-- 商品画像① -->
+    <div class="item-pr">
+        <img onclick="location.href='item.html'" src="../img/item_0001.jpg" alt="商品画像">
+        <div class="item-details">
+            <!-- 商品名 -->
+            <h1>NANCHARAPAKER</h1>
+            <h2>ナンチャラパーカー</h2>
+            <!-- 価格 -->
+            <h3>¥4,000</h3>
+            <!-- アイテム説明 -->
+            <p>抜群の着こなし性能と、スタンダードでオーソドックスな人気のアイテム。
+                <br>季節を選ばず使える一着です。
+            </p>
+        </div>
+    </div>
+
+    <!-- 商品画像② -->
+    <div class="item-pr">
+        <img onclick="location.href='item.html'" src="../img/item_0005.jpg" alt="商品画像">
+        <div class="item-details">
+            <!-- 商品名 -->
+            <h1>NANCHARAPAKER</h1>
+            <h2>ナンチャラパーカー</h2>
+            <!-- 価格 -->
+            <h3>¥4,000</h3>
+            <!-- アイテム説明 -->
+            <p>抜群の着こなし性能と、スタンダードでオーソドックスな人気のアイテム。
+                <br>季節を選ばず使える一着です。
+            </p>
+        </div>
+    </div>
+
+    <div class="etc-item-btn">
+        <button onclick="location.href='history.html'">他のアイテムを見る</button>
+    </div>
+
+    <ul class="slider_history">
+        <li><img onclick="location.href='item.html'" id="history_img_1"></li>
+        <li><img onclick="location.href='item.html'" id="history_img_2"></li>
+        <li><img onclick="location.href='item.html'" id="history_img_3"></li>
+        <li><img onclick="location.href='item.html'" id="history_img_4"></li>
+        <li><img onclick="location.href='item.html'" id="history_img_5"></li>
+    </ul>
+
+    <!-- トレンド -->
+    <div class="title">
+        <h1>TREND</h1>
+        <h2>季節のトレンド</h2>
+    </div>
+
+    <!-- 商品画像① -->
+    <div class="item-pr">
+        <img onclick="location.href='item.html'" src="../img/item_0001.jpg" alt="商品画像">
+        <div class="item-details">
+            <!-- 商品名 -->
+            <h1>NANCHARAPAKER</h1>
+            <h2>ナンチャラパーカー</h2>
+            <!-- 価格 -->
+            <h3>¥4,000</h3>
+            <!-- アイテム説明 -->
+            <p>抜群の着こなし性能と、スタンダードでオーソドックスな人気のアイテム。
+                <br>季節を選ばず使える一着です。
+            </p>
+        </div>
+    </div>
+
+    <!-- 商品画像② -->
+    <div class="item-pr">
+        <img onclick="location.href='item.html'" src="../img/item_0005.jpg" alt="商品画像">
+        <div class="item-details">
+            <!-- 商品名 -->
+            <h1>NANCHARAPAKER</h1>
+            <h2>ナンチャラパーカー</h2>
+            <!-- 価格 -->
+            <h3>¥4,000</h3>
+            <!-- アイテム説明 -->
+            <p>抜群の着こなし性能と、スタンダードでオーソドックスな人気のアイテム。
+                <br>季節を選ばず使える一着です。
+            </p>
+        </div>
+    </div>
+
+    <div class="etc-item-btn">
+        <button onclick="location.href='trend.html'">他のアイテムを見る</button>
+    </div>
+
+    <ul class="slider_trend">
+        <li><img onclick="location.href='item.html'" id="trend_img_1"></li>
+        <li><img onclick="location.href='item.html'" id="trend_img_2"></li>
+        <li><img onclick="location.href='item.html'" id="trend_img_3"></li>
+        <li><img onclick="location.href='item.html'" id="trend_img_4"></li>
+        <li><img onclick="location.href='item.html'" id="trend_img_5"></li>
+    </ul>
+
+    <!-- フッター -->
+    <footer>
+        <div id="footer"></div>
+    </footer>
+
+    <!-- js 読み込み -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- cart.js 読み込み -->
+    <script type="text/javascript" src="../jsc/cart.js"></script>
+</body>
+
+</html>
