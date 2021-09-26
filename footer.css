@@ -1,0 +1,138 @@
+/*==================================================
+全体設定
+==================================================*/
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
+    html {
+        /* 文字サイズ10px(1rem) */
+        font-size: 62.5%;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    /* 画面サイズが1025px以上の場合に適用（PC版） */
+    html {
+        /* 文字サイズ15px(1rem) */
+        font-size: 93.75%;
+    }
+}
+
+
+/*==================================================
+フッター
+==================================================*/
+
+
+/* 全体 */
+
+footer {
+    /* 相対配置 */
+    position: relative;
+    /* 背景色 */
+    background-color: #2f2f2f;
+    /* 中央揃え（横） */
+    text-align: center;
+    /* 中央揃え（縦） */
+    align-items: center;
+    /* 幅 */
+    width: 100%;
+    /* 上下左右の内幅 */
+    padding: 0.5rem 0 1rem;
+}
+
+
+/* 全体設定 */
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
+    footer ul {
+        /* 黒点削除 */
+        list-style: none;
+        /* 上下左右の内幅 */
+        padding: 0;
+        /* 上下左右の余白 */
+        margin: 0 0 3rem;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    /* 画面サイズが1025px以上の場合に適用（PC版） */
+    footer ul {
+        /* 絶対配置 */
+        position: absolute;
+        right: 1rem;
+        /* 中央揃え（横） */
+        text-align: left;
+        /* 黒点削除 */
+        list-style: none;
+        /* 上下左右の内幅 */
+        padding: 0;
+        /* 上下左右の余白 */
+        margin: 0 0 3rem;
+    }
+}
+
+
+/* ボタン */
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
+    .etc-link li {
+        /* 文字色 */
+        color: #ffffff;
+        /* 文字サイズ */
+        font-size: 2rem;
+        /* 上下左右の内幅 */
+        padding: 0.5rem 0;
+        /* 上下左右の余白 */
+        margin: 0;
+        /* 幅 */
+        width: 100%;
+        /* 文字列位置 */
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    /* 画面サイズが1025px以上の場合に適用（PC版） */
+    .etc-link li {
+        /* マウスカーソルを指マークに */
+        cursor: pointer;
+        /* 文字色 */
+        color: #ffffff;
+        /* 文字サイズ */
+        font-size: 1.5rem;
+        /* 上下左右の余白 */
+        margin: 0.7rem 0;
+        /* 幅 */
+        width: 100%;
+    }
+}
+
+
+/* アイコン */
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
+    footer img {
+        /* アスペクト比維持 */
+        object-fit: contain;
+        /* サイズ */
+        width: 8rem;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    /* 画面サイズが1025px以上の場合に適用（PC版） */
+    footer img {
+        /* アスペクト比維持 */
+        object-fit: contain;
+        /* サイズ */
+        width: 8rem;
+        height: auto;
+        /* 上下左右の余白 */
+        padding: 7rem 0 0;
+    }
+}
