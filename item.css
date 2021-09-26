@@ -1,0 +1,1036 @@
+/*==================================================
+全体設定
+==================================================*/
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
+    html {
+        /* 文字サイズ10px(1rem) */
+        font-size: 62.5%;
+        /* 縦スクロール可能にする設定 */
+        overflow: auto;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    /* 画面サイズが1025px以上の場合に適用（PC版） */
+    html {
+        /* 文字サイズ15px(1rem) */
+        font-size: 93.75%;
+        /* 縦スクロール可能にする設定 */
+        overflow: auto;
+    }
+}
+
+body {
+    /* 文字色 */
+    color: #2f2f2f;
+    /* 上下左右の余白 */
+    margin: 0;
+    /* 縦・横スクロール不可設定 */
+    overflow: hidden;
+}
+
+
+/*==================================================
+メインアイテム
+==================================================*/
+
+
+/* 全体 */
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
+    .main-item {
+        /* 相対位置 */
+        position: relative;
+        top: 8rem;
+        /* 横幅 */
+        width: 100vw;
+        /* 上下左右の余白 */
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    /* 画面サイズが1025px以上の場合に適用（PC版） */
+    .main-item {
+        /* 並行配置 */
+        display: flex;
+        /* 相対位置 */
+        position: relative;
+        top: 5rem;
+        /* 横幅 */
+        width: 90vw;
+        /* 上下左右の余白 */
+        margin: 0 auto;
+    }
+}
+
+
+/* 商品画像 */
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
+    .main-item img {
+        /* 画像サイズ */
+        width: 100vw;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    /* 画面サイズが1025px以上の場合に適用（PC版） */
+    .main-item img {
+        /* 画像サイズ */
+        width: 35vw;
+        height: auto;
+        /* 上下左右の余白 */
+        margin: 0 auto;
+        /* アスペクト比を維持 */
+        object-fit: cover;
+    }
+}
+
+
+/* 商品詳細エリア */
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
+    .item-details {
+        /* 相対配置 */
+        position: relative;
+        /* 幅 */
+        width: 95vw;
+        /* 上下左右の余白 */
+        margin: 0 auto 30vw;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    /* 画面サイズが1025px以上の場合に適用（PC版） */
+    .item-details {
+        /* 幅 */
+        width: 45vw;
+        /* 上下左右の余白 */
+        margin: 0 auto 0 0;
+    }
+}
+
+
+/* 商品名英字 */
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
+    .item-details h1 {
+        /* フォント */
+        font-family: Impact, 'Arial Narrow Bold', sans-serif;
+        /* 文字サイズ */
+        font-size: 12vw;
+        /* 行間隔 */
+        line-height: 12vw;
+        /* 幅 */
+        width: 100%;
+        /* 上下左右の余白 */
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    /* 画面サイズが1025px以上の場合に適用（PC版） */
+    .item-details h1 {
+        /* フォント */
+        font-family: Impact, 'Arial Narrow Bold', sans-serif;
+        /* 文字サイズ */
+        font-size: 6vw;
+        /* 行間隔 */
+        line-height: 6vw;
+        /* 幅 */
+        width: 100%;
+        /* 上下左右の余白 */
+        margin: 0;
+    }
+}
+
+
+/* 商品名カナ */
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
+    .sp_itemName {
+        /* 絶対配置 */
+        position: absolute;
+        top: 13.5vw;
+        left: 50vw;
+        /* 文字サイズ */
+        font-size: 5vw;
+        /* 行間隔 */
+        line-height: 5vw;
+        /* 幅 */
+        width: 100%;
+        /* 上下左右の余白 */
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    /* 画面サイズが1025px以上の場合に適用（PC版） */
+    .sp_itemName {
+        /* 非表示 */
+        display: none;
+    }
+}
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
+    .pc_itemName {
+        /* 非表示 */
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    /* 画面サイズが1025px以上の場合に適用（PC版） */
+    .pc_itemName {
+        /* 文字サイズ */
+        font-size: 1.5vw;
+        /* 行間隔 */
+        line-height: 0;
+        /* 幅 */
+        width: 100%;
+        /* 上下左右の余白 */
+        margin: 1vw 0 2vw;
+    }
+}
+
+
+/* サイズエリア */
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
+    .size-area {
+        /* 上下左右の余白 */
+        margin: 2vw 0 0 3vw;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    /* 画面サイズが1025px以上の場合に適用（PC版） */
+    .size-area {
+        /* 上下左右の余白 */
+        margin: 0;
+    }
+}
+
+
+/* サイズ文言 */
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
+    .size-area h3 {
+        /* フォント */
+        font-family: Impact, 'Arial Narrow Bold', sans-serif;
+        /* 文字サイズ */
+        font-size: 5vw;
+        /* 上下左右の余白 */
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    /* 画面サイズが1025px以上の場合に適用（PC版） */
+    .size-area h3 {
+        /* フォント */
+        font-family: Impact, 'Arial Narrow Bold', sans-serif;
+        /* 文字サイズ */
+        font-size: 1.5vw;
+        /* 上下左右の余白 */
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
+    .size-button {
+        /* フォント */
+        font-family: Impact, 'Arial Narrow Bold', sans-serif;
+        /* 文字サイズ */
+        font-size: 5vw;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    /* 画面サイズが1025px以上の場合に適用（PC版） */
+    .size-button {
+        /* フォント */
+        font-family: Impact, 'Arial Narrow Bold', sans-serif;
+        /* 文字サイズ */
+        font-size: 2vw;
+    }
+}
+
+.size-button input[type=radio] {
+    /* 非表示に設定 */
+    display: none;
+}
+
+
+/* 枠線 */
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
+    .size-button label {
+        /* 背景色と同化 */
+        color: transparent;
+        /* 枠線 */
+        border: 0.1rem solid #2f2f2f;
+        /* 正円形にする */
+        display: inline-block;
+        /* 文字サイズ */
+        font-size: 2.5rem;
+        /* サイズ */
+        width: 5vw;
+        height: 5vw;
+        /* 形状を円形にする */
+        border-radius: 50%;
+        /* 中央揃え */
+        text-align: center;
+        line-height: 5vw;
+        /* 上下左右の余白 */
+        margin: 0.4vw;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    /* 画面サイズが1025px以上の場合に適用（PC版） */
+    .size-button label {
+        /* 背景色と同化 */
+        color: transparent;
+        /* 枠線 */
+        border: 0.1rem solid #2f2f2f;
+        /* 正円形にする */
+        display: inline-block;
+        /* 文字サイズ */
+        font-size: 1rem;
+        /* サイズ */
+        width: 1.5vw;
+        height: 1.5vw;
+        /* 形状を円形にする */
+        border-radius: 50%;
+        /* 中央揃え */
+        text-align: center;
+        line-height: 2.3vw;
+        /* 上下左右の余白 */
+        margin: 0.4vw;
+    }
+}
+
+
+/* 押下時の枠線 */
+
+.size-button input[type="radio"]:checked+label {
+    /* 枠線 */
+    border: 0.2rem solid #31a9ee;
+}
+
+
+/* マウスホバー時の枠線 */
+
+.size-button input[type="radio"]:hover+label {
+    /* 枠線 */
+    border: 0.2rem solid #31a9ee;
+    /*マウスカーソルを指マークに*/
+    cursor: pointer;
+}
+
+
+/* カラーエリア */
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
+    .culor-area {
+        /* 上下左右の余白 */
+        margin: 0 0 10vw 3vw;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    /* 画面サイズが1025px以上の場合に適用（PC版） */
+    .culor-area {
+        /* 上下左右の余白 */
+        margin: 0 0 3vw;
+    }
+}
+
+
+/* カラー文言 */
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
+    .culor-area h4 {
+        /* フォント */
+        font-family: Impact, 'Arial Narrow Bold', sans-serif;
+        /* 文字サイズ */
+        font-size: 5vw;
+        /* 上下左右の余白 */
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    /* 画面サイズが1025px以上の場合に適用（PC版） */
+    .culor-area h4 {
+        /* フォント */
+        font-family: Impact, 'Arial Narrow Bold', sans-serif;
+        /* 文字サイズ */
+        font-size: 1.5vw;
+        /* 上下左右の余白 */
+        margin: 0;
+    }
+}
+
+
+/* カラーボタン */
+
+.culor-button input[type=radio] {
+    /* 非表示に設定 */
+    display: none;
+}
+
+
+/* 枠線 */
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
+    .culor-button label {
+        /* 枠線 */
+        border: 0.1rem solid #2f2f2f;
+        /* 正円形にする */
+        display: inline-block;
+        /* サイズ */
+        width: 8vw;
+        height: 8vw;
+        /* 形状を円形にする */
+        border-radius: 50%;
+        /* 中央揃え */
+        text-align: center;
+        line-height: 8vw;
+        /* 上下左右の余白 */
+        margin: 0.4vw 2vw 0 0;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    /* 画面サイズが1025px以上の場合に適用（PC版） */
+    .culor-button label {
+        /* 枠線 */
+        border: 0.1rem solid #2f2f2f;
+        /* 正円形にする */
+        display: inline-block;
+        /* サイズ */
+        width: 2.5vw;
+        height: 2.5vw;
+        /* 形状を円形にする */
+        border-radius: 50%;
+        /* 中央揃え */
+        text-align: center;
+        line-height: 2.5vw;
+        /* 上下左右の余白 */
+        margin: 0.4vw;
+    }
+}
+
+
+/* 押下時の枠線 */
+
+.culor-button input[type="radio"]:checked+label {
+    /* 枠線 */
+    border: 0.2rem solid #31a9ee;
+}
+
+
+/* マウスホバー時の枠線 */
+
+.culor-button input[type="radio"]:hover+label {
+    /* 枠線 */
+    border: 0.2rem solid #31a9ee;
+    /*マウスカーソルを指マークに*/
+    cursor: pointer;
+}
+
+
+/* カラーボタンの背景色設定 */
+
+.culor-button label[for=white] {
+    /* 背景色 */
+    background-color: #ffffff;
+}
+
+.culor-button label[for=gray] {
+    /* 背景色 */
+    background-color: #4f4f4f;
+}
+
+.culor-button label[for=black] {
+    /* 背景色 */
+    background-color: #000000;
+}
+
+
+/* 価格 */
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
+    .item-details h5 {
+        /* 文字サイズ */
+        font-size: 13vw;
+        /* 不要な余白を削除 */
+        line-height: 0;
+        /* 上下左右の余白 */
+        margin: 0 0 15vw 3vw;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    /* 画面サイズが1025px以上の場合に適用（PC版） */
+    .item-details h5 {
+        /* 文字サイズ */
+        font-size: 4vw;
+        /* 不要な余白を削除 */
+        line-height: 0;
+        /* 上下左右の余白 */
+        margin: 0 0 4vw;
+    }
+}
+
+
+/* 商品説明文 */
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
+    .item-details p {
+        /* 文字サイズ */
+        font-size: 3.5vw;
+        /* 上下左右の余白 */
+        margin: 0 0 0 3vw;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    /* 画面サイズが1025px以上の場合に適用（PC版） */
+    .item-details p {
+        /* 文字サイズ */
+        font-size: 1.5vw;
+        /* 上下左右の余白 */
+        margin: 0;
+    }
+}
+
+
+/* カート・お気に入りボタン */
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
+    .item-button {
+        /* 要素並行 */
+        display: flex;
+        /* 幅 */
+        width: 100%;
+        /* 中央揃え */
+        justify-content: center;
+        /* 上下左右の余白 */
+        margin: 30px 0 0;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    /* 画面サイズが1025px以上の場合に適用（PC版） */
+    .item-button {
+        /* 絶対配置 */
+        position: absolute;
+        bottom: 1vw;
+        /* 要素並行 */
+        display: flex;
+        /* 幅 */
+        width: 45%;
+    }
+}
+
+
+/* カートに入れるボタン */
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
+    .item-button button {
+        /* 文字色 */
+        color: #ffffff;
+        /* 文字サイズ */
+        font-size: 5vw;
+        /* 背景色 */
+        background-color: #4f4f4f;
+        /* 枠線 */
+        border: none;
+        /* 上下左右の内幅 */
+        padding: 1.5vw 5vw;
+        /* 上下左右の余白 */
+        margin: 0;
+        /*マウスカーソルを指マークに*/
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    /* 画面サイズが1025px以上の場合に適用（PC版） */
+    .item-button button {
+        /* 文字色 */
+        color: #ffffff;
+        /* 文字サイズ */
+        font-size: 2vw;
+        /* 背景色 */
+        background-color: #4f4f4f;
+        /* 枠線 */
+        border: none;
+        /* 上下左右の内幅 */
+        padding: 1.5vw 3vw;
+        /* 上下左右の余白 */
+        margin: 0;
+        /*マウスカーソルを指マークに*/
+        cursor: pointer;
+    }
+}
+
+
+/* お気に入りボタン */
+
+
+/* アイコン */
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
+    .heart-icon {
+        /* 上下左右の余白 */
+        margin: auto 2vw;
+        /* アイコン色 */
+        color: #ff0000;
+        /* アイコンサイズ */
+        font-size: 8vw;
+        /*マウスカーソルを指マークに*/
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    /* 画面サイズが1025px以上の場合に適用（PC版） */
+    .heart-icon {
+        /* 上下左右の余白 */
+        margin: auto 2vw;
+        /* アイコン色 */
+        color: #ff0000;
+        /* アイコンサイズ */
+        font-size: 3vw;
+        /*マウスカーソルを指マークに*/
+        cursor: pointer;
+    }
+}
+
+
+/* 初めはお気に入り登録前の状態にしておく */
+
+.heart-icon #heart-after {
+    /* 要素ごと消す */
+    display: none;
+}
+
+
+/*==================================================
+スライダー
+==================================================*/
+
+
+/* 全体 */
+
+.slider {
+    /* 横幅 */
+    width: 100%;
+    /* 上下左右の余白 */
+    margin: 12vw auto 4vw;
+    /* 上下左右の内幅 */
+    padding: 0;
+    /* 黒点削除 */
+    list-style: none;
+}
+
+
+/* 画像 */
+
+.slider img {
+    /* 画像サイズ */
+    width: 35vw;
+    height: auto;
+}
+
+
+/* スライド左右の余白調整 */
+
+.slider .slick-slide {
+    /* 拡大や透過のアニメーションを0.5秒で実行 */
+    transition: all .5s;
+    /* 上下左右の余白 */
+    margin: 0 2vw;
+}
+
+
+/*ドットナビゲーションの設定*/
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
+    .slick-dots {
+        /* 中央揃え */
+        text-align: center;
+        /* 不要な余白削除 */
+        line-height: 0;
+        list-style: none;
+        /* 上下左右の余白 */
+        margin: 1rem auto 0;
+        /* 上下左右の内幅 */
+        padding: 0;
+    }
+    .slick-dots li {
+        /* 並行にボタンを配置 */
+        display: inline-block;
+        /* 上下左右の余白 */
+        margin: 0 0.1rem;
+    }
+    .slick-dots button {
+        display: block;
+        /* 文字を背景色に合わせる */
+        color: transparent;
+        /* 枠線削除 */
+        outline: none;
+        /* サイズ */
+        width: 3rem;
+        height: 0.5rem;
+        /* ドット形状 */
+        border-radius: 10%;
+        /* ドットボタン色 */
+        background: #cfcfcf;
+    }
+    .slick-dots .slick-active button {
+        /* ドットボタンの現在地色 */
+        background: #2f2f2f;
+    }
+}
+
+
+/*==================================================
+タイトル（お気に入り、注文履歴、トレンド）
+==================================================*/
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    #title-favorite,
+    #title-history {
+        /* 非表示 */
+        display: none;
+    }
+}
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    /* タイトル_エリア */
+    .title {
+        /* 上下左右の余白 */
+        margin: 0 auto 5vw;
+    }
+    /* タイトル_文言1 */
+    .title h1 {
+        /* フォント */
+        font-family: Impact, 'Arial Narrow Bold', sans-serif;
+        /* 中央揃え */
+        text-align: center;
+        /* 文字サイズ */
+        font-size: 7vw;
+        /* 文字下線 */
+        text-decoration: underline;
+        /* 上下左右の余白 */
+        margin: 0;
+    }
+    /* タイトル_文言2 */
+    .title h2 {
+        /* 中央揃え */
+        text-align: center;
+        /* 行間隔 */
+        line-height: 3vw;
+        /* 文字サイズ */
+        font-size: 3vw;
+        /* 上下左右の余白 */
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    /* タイトル_エリア */
+    .title {
+        /* 相対配置 */
+        position: relative;
+        top: 0;
+        /* 上下左右の余白 */
+        margin: 0 auto 1rem;
+    }
+    /* タイトル_文言1 */
+    .title h1 {
+        /* フォント */
+        font-family: Impact, 'Arial Narrow Bold', sans-serif;
+        /* 中央揃え */
+        text-align: center;
+        /* 文字サイズ */
+        font-size: 4vw;
+        /* 文字下線 */
+        text-decoration: underline;
+        /* 上下左右の余白 */
+        margin: 0;
+    }
+    /* タイトル_文言2 */
+    .title h2 {
+        /* 中央揃え */
+        text-align: center;
+        /* 文字サイズ */
+        font-size: 1.5vw;
+        /* 上下左右の余白 */
+        margin: 0;
+    }
+}
+
+
+/*==================================================
+商品（お気に入り、注文履歴、トレンド）
+==================================================*/
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    /* 全体 */
+    .item-pr {
+        /* 並行配置 */
+        display: flex;
+        /* 相対位置 */
+        position: relative;
+        top: 0;
+        /* 横幅 */
+        width: 90vw;
+        /* 上下左右の余白 */
+        margin: 0 auto 5vw;
+    }
+    /* 商品画像 */
+    .item-pr img {
+        /* 画像サイズ */
+        width: 35vw;
+        height: auto;
+        /* 上下左右の余白 */
+        margin: 0 auto;
+        /* アスペクト比を維持 */
+        object-fit: cover;
+        /* マウスカーソルを指マークに */
+        cursor: pointer;
+    }
+    /* 商品詳細エリア */
+    .item-trend {
+        /* 幅 */
+        width: 45vw;
+        /* 上下左右の余白 */
+        margin: 0 auto 0 0;
+    }
+    /* 商品名英字 */
+    .item-trend h1 {
+        /* フォント */
+        font-family: Impact, 'Arial Narrow Bold', sans-serif;
+        /* 文字サイズ */
+        font-size: 4vw;
+        /* 行間隔 */
+        line-height: 6vw;
+        /* 下線 */
+        text-decoration: underline;
+        /* 幅 */
+        width: auto;
+        /* 上下左右の余白 */
+        margin: 0;
+    }
+    /* 商品名カナ */
+    .item-trend h2 {
+        /* フォント */
+        font-family: Impact, 'Arial Narrow Bold', sans-serif;
+        /* 文字サイズ */
+        font-size: 2.5vw;
+        /* 行間隔 */
+        line-height: 4vw;
+        /* 幅 */
+        width: 100%;
+        /* 上下左右の余白 */
+        margin: 0 0 7vw;
+    }
+    /* 価格 */
+    .item-trend h3 {
+        /* 文字サイズ */
+        font-size: 5vw;
+        /* 不要な余白を削除 */
+        line-height: 0;
+        /* 上下左右の余白 */
+        margin: 0 0 7vw;
+    }
+    /* 商品説明文 */
+    .item-trend p {
+        /* 文字サイズ */
+        font-size: 2.5vw;
+        /* 上下左右の余白 */
+        margin: 0;
+    }
+    /* 遷移ボタン */
+    .etc-item-btn {
+        /* 幅 */
+        width: 100%;
+        /* 中横揃え */
+        text-align: center;
+    }
+    .etc-item-btn button {
+        /* 背景色 */
+        background-color: #4f4f4f;
+        /* 文字色 */
+        color: #ffffff;
+        /* 文字サイズ */
+        font-size: 4vw;
+        /* ボタン形状 */
+        border-radius: 10px;
+        /* 幅 */
+        width: 60%;
+        /* 上下左右の内幅 */
+        padding: 3vw 0;
+        /* 上下左右の余白 */
+        margin: 0 auto 2vw;
+        /* マウスカーソルを指マークに */
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .item-pr {
+        /* 非表示 */
+        display: none;
+    }
+    .etc-item-btn {
+        /* 非表示 */
+        display: none;
+    }
+}
+
+
+/*==================================================
+スライド（お気に入り、注文履歴、トレンド）
+==================================================*/
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    .slider_favorite,
+    .slider_history,
+    .slider_trend {
+        /* 非表示 */
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    /* 全体設定 */
+    .slider_favorite,
+    .slider_history,
+    .slider_trend {
+        /* 横幅 */
+        width: 94vw;
+        /* 上下左右の余白 */
+        margin: 0 auto 5vw;
+        /* 上下左右の内幅 */
+        padding: 0;
+        /* 黒点削除 */
+        list-style: none;
+    }
+    /* 画像 */
+    .slider_favorite img,
+    .slider_history img,
+    .slider_trend img {
+        /* 画像サイズ */
+        width: 100%;
+        height: auto;
+    }
+    /* スライド左右の余白調整 */
+    .slider_favorite .slick-slide,
+    .slider_history .slick-slide,
+    .slider_trend .slick-slide {
+        /* 拡大や透過のアニメーションを0.5秒で実行 */
+        transition: all .5s;
+        /* 上下左右の余白 */
+        margin: 0 10px;
+    }
+    /* 矢印共通設定 */
+    .slick-prev-favorite,
+    .slick-next-favorite,
+    .slick-prev-history,
+    .slick-next-history,
+    .slick-prev-trend,
+    .slick-next-trend {
+        /* 優先表示順 */
+        z-index: 1;
+        /* 押下時のイベントを削除 */
+        pointer-events: none;
+        /* 絶対配置 */
+        position: absolute;
+        top: 45%;
+        /* 枠線（上） */
+        border-top: 0.3rem solid #efefef;
+        /* 枠線（右） */
+        border-right: 0.3rem solid #efefef;
+        /* 押下時の枠線削除 */
+        outline: none;
+        /* 矢印サイズ */
+        width: 3vw;
+        height: 3vw;
+    }
+    /* 矢印（前へ） */
+    .slick-prev-favorite,
+    .slick-prev-history,
+    .slick-prev-trend {
+        /* 位置 */
+        left: -2%;
+        /* 形状 */
+        transform: rotate(-135deg);
+    }
+    /* 矢印（次へ） */
+    .slick-next-favorite,
+    .slick-next-history,
+    .slick-next-trend {
+        /*マウスカーソルを指マークに*/
+        cursor: pointer;
+        /* 位置 */
+        right: -2%;
+        /* 形状 */
+        transform: rotate(45deg);
+    }
+    /* 矢印（前へ）押下時 */
+    .slick-prev-favorite.reveal,
+    .slick-prev-history.reveal,
+    .slick-prev-trend.reveal {
+        /* 押下時のイベントを削除 */
+        pointer-events: auto;
+        /*マウスカーソルを指マークに*/
+        cursor: pointer;
+        /* 枠線（上） */
+        border-top: 0.3rem solid #6f6f6f;
+        /* 枠線（右） */
+        border-right: 0.3rem solid #6f6f6f;
+    }
+    /* 矢印（次へ）押下時 */
+    .slick-next-favorite.reveal,
+    .slick-next-history.reveal,
+    .slick-next-trend.reveal {
+        /* 押下時のイベントを削除 */
+        pointer-events: auto;
+        /*マウスカーソルを指マークに*/
+        cursor: inherit;
+        /* 枠線（上） */
+        border-top: 0.3rem solid #6f6f6f;
+        /* 枠線（右） */
+        border-right: 0.3rem solid #6f6f6f;
+    }
+}
