@@ -1,0 +1,882 @@
+/*==================================================
+全体設定
+==================================================*/
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    html {
+        /* 文字サイズ10px(1rem) */
+        font-size: 62.5%;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    html {
+        /* 文字サイズ15px(1rem) */
+        font-size: 93.75%;
+    }
+}
+
+
+/*==================================================
+メインビジュアル以降
+==================================================*/
+
+#search-form #form-text.reveal {
+    /* 非透過 */
+    opacity: 100%;
+}
+
+#search-form #form-button.reveal {
+    /* 非透過 */
+    opacity: 100%;
+}
+
+
+/*==================================================
+ヘッダー
+==================================================*/
+
+header {
+    /* 優先表示順 */
+    z-index: 10;
+    /* 背景色 */
+    background-color: #2f2f2f;
+    /* 固定配置 */
+    position: fixed;
+    /* 幅 */
+    width: 100%;
+}
+
+.header-icon {
+    /* 相対配置 */
+    position: relative;
+    /* 要素を並行に配置 */
+    display: flex;
+    /* 中央揃え */
+    justify-content: center;
+    align-items: center;
+    /* 縁取り */
+    filter: drop-shadow(0 0 1.5px #2f2f2f);
+    /* 上下左右の内幅 */
+    padding: 2vw 0;
+    /* 上下左右の余白 */
+    margin: 0 auto;
+}
+
+
+/*==================================================
+ハンバーガーメニュー
+==================================================*/
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    /*=====================
+    メニューボタン
+    =====================*/
+    .menu_btn {
+        /* 優先表示順 */
+        z-index: 30;
+        /* マウスカーソルを指マークに */
+        cursor: pointer;
+        /* 固定配置 */
+        position: fixed;
+        top: 2.5vw;
+        left: 2vw;
+        /* 幅 */
+        width: 8vw;
+        /* 縁取り */
+        filter: drop-shadow(0 0 1.5px #2f2f2f);
+        /* 表示のアニメーションを0.5秒で実行 */
+        transition: all .5s;
+    }
+    .menu_btn span {
+        /* 絶対配置 */
+        position: absolute;
+        /* ラインの太さ */
+        height: 0.5vw;
+        /* ラインの色 */
+        background: #ffffff;
+        /* 幅いっぱいの大きさ */
+        width: 100%;
+    }
+    /* 1ライン目 */
+    .menu_btn span:nth-of-type(1) {
+        top: 0;
+    }
+    /* 2ライン目 */
+    .menu_btn span:nth-of-type(2) {
+        top: 2vw;
+    }
+    /* 3ライン目 */
+    .menu_btn span:nth-of-type(3) {
+        top: 4vw;
+    }
+    /* 文言 */
+    .menu_btn span:nth-of-type(3)::after {
+        /* 表示文字 */
+        content: "menu";
+        /* 絶対配置 */
+        position: absolute;
+        top: 1vw;
+        /* 文字色 */
+        color: #ffffff;
+        /* 文字サイズ */
+        font-size: 2.5vw;
+        /* 全大文字設定 */
+        text-transform: uppercase;
+        /* 中央揃え */
+        text-align: center;
+        /* 幅 */
+        width: 100%
+    }
+    /* メニューボタン押下時 */
+    .open .menu_btn {
+        /* 位置 */
+        left: 45vw;
+        /* 回転表示 */
+        transform: rotate(360deg);
+    }
+    .open .menu_btn span:nth-of-type(1),
+    .open .menu_btn span:nth-of-type(3) {
+        width: 90%;
+    }
+    .open .menu_btn span:nth-of-type(1) {
+        /* 位置 */
+        top: 1vw;
+        left: 0;
+        transform: translateY(0) rotate(-45deg);
+        /* サイズ */
+        width: 90%;
+    }
+    .open .menu_btn span:nth-of-type(2) {
+        /* 非表示 */
+        opacity: 0;
+    }
+    .open .menu_btn span:nth-of-type(3) {
+        /* 位置 */
+        top: 1vw;
+        left: 0;
+        transform: translateY(0) rotate(45deg);
+        /* サイズ */
+        width: 90%;
+    }
+    .open .menu_btn span:nth-of-type(3)::after {
+        /* 表示文字 */
+        content: "close";
+        top: 2vw;
+        left: 3vw;
+        /* 斜め表示にならないよう設定 */
+        transform: translateY(0) rotate(-45deg);
+    }
+    /*=====================
+    白背景
+    =====================*/
+    #menu-area nav {
+        /* 優先表示順 */
+        z-index: 30;
+        /* 固定配置 */
+        position: fixed;
+        top: 0;
+        left: -40vw;
+        bottom: 0;
+        /* 幅 */
+        width: 40vw;
+        /* 背景色 */
+        background: #ffffff;
+        /* 表示のアニメーションを0.5秒で実行 */
+        transition: all .5s;
+        /* 非表示 */
+        opacity: 0;
+    }
+    .open #menu-area nav {
+        /* 位置 */
+        left: 0;
+        /* 表示 */
+        opacity: 1;
+    }
+    nav .menu-inner {
+        /* 上下左右の内幅 */
+        padding: 25px;
+    }
+    nav .menu-inner ul {
+        /* 黒点削除 */
+        list-style: none;
+        /* 上下左右の内幅 */
+        padding: 0;
+        /* 上下左右の余白 */
+        margin: 0;
+    }
+    nav .menu-inner ul li {
+        /* 相対配置 */
+        position: relative;
+        /* 下線 */
+        border-bottom: 1px solid #2f2f2f;
+        /* 上下左右の余白 */
+        margin: 0;
+    }
+    nav .menu-inner ul li a {
+        display: block;
+        /* 文字色 */
+        color: #2f2f2f;
+        /* 文字サイズ */
+        font-size: 14px;
+        /* 上下左右の内幅 */
+        padding: 1rem;
+        /* 文字装飾（下線）削除 */
+        text-decoration: none;
+        /* ホバー時のアニメーションを0.2秒で実行 */
+        transition-duration: 0.2s;
+    }
+    nav .menu-inner ul li a:hover {
+        /* ホバー時の背景色 */
+        background: #e4e4e4;
+    }
+    /*=====================
+    黒背景
+    =====================*/
+    #mask {
+        /* 非表示 */
+        display: none;
+        /* 表示のアニメーションを0.5秒で実行 */
+        transition: all .5s;
+    }
+    .open #mask {
+        /* 優先表示順 */
+        z-index: 20;
+        /* マウスカーソルを指マークに */
+        cursor: pointer;
+        /* 表示 */
+        display: block;
+        /* 固定配置 */
+        position: fixed;
+        top: 0;
+        left: 0;
+        /* 幅・高さ */
+        width: 100%;
+        height: 100%;
+        /* 背景色 */
+        background: #000000;
+        /* 透明度 */
+        opacity: .8;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    #menu-area {
+        /* 非表示 */
+        display: none;
+    }
+}
+
+
+/*==================================================
+GALEアイコン
+==================================================*/
+
+.gale-icon {
+    /* マウスカーソルを指マークに */
+    cursor: pointer;
+    /* サイズ */
+    height: auto;
+    /* アスペクト比維持 */
+    object-fit: contain;
+}
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    .gale-icon {
+        /* サイズ */
+        width: 13vw;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .gale-icon {
+        /* 絶対配置 */
+        position: absolute;
+        left: 1vw;
+        /* サイズ */
+        width: 4vw;
+    }
+}
+
+
+/*==================================================
+ログイン
+==================================================*/
+
+.login-icon {
+    /* マウスカーソルを指マークに */
+    cursor: pointer;
+    /* 絶対配置 */
+    position: absolute;
+}
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    .login-icon {
+        /* 位置 */
+        top: 2vw;
+        right: 12vw;
+        /* サイズ */
+        width: 15vw;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .login-icon {
+        /* 位置 */
+        right: 5vw;
+        /* サイズ */
+        width: 5vw;
+    }
+}
+
+
+/*==================================================
+メニュータブ
+==================================================*/
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    .menu-tab {
+        /* 非表示 */
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .menu-tab {
+        /* マウスカーソルを指マークに */
+        cursor: pointer;
+        /* 並行配置 */
+        display: flex;
+        /* 絶対配置 */
+        position: absolute;
+        right: 10vw;
+    }
+    .menu-tab li {
+        /* フォント */
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        /* 太字 */
+        font-weight: bold;
+        /* 黒点を削除 */
+        list-style: none;
+        /* 文字中央揃え */
+        text-align: center;
+        /* 幅 */
+        width: 8vw;
+        /* 上下左右の余白 */
+        margin: 0 auto;
+    }
+    .menu-tab li a {
+        /* 文字色 */
+        color: #ffffff;
+        /* ブロック要素に設定 */
+        display: block;
+        /* 相対配置 */
+        position: relative;
+        /* はみ出す要素を隠す */
+        overflow: hidden;
+        /* 上下左右の内幅 */
+        padding: 1vw;
+    }
+    .menu-tab li span {
+        /* 絶対配置 */
+        position: absolute;
+        left: 50%;
+        top: 20%;
+        /* アニメーションの指定 */
+        transition: all .5s;
+        /* 中央寄せ */
+        transform: translate(-50%, 0);
+        /* ブロック要素に設定 */
+        display: block;
+        /* 不透過 */
+        opacity: 1;
+        /* テキスト折り返しなし */
+        white-space: nowrap;
+        /* 文字サイズ */
+        font-size: 1vw;
+    }
+    /* 差し替わるテキストの設定 */
+    .menu-tab li span:nth-child(2) {
+        /* 透過0 */
+        opacity: 0;
+        /* X方向に-50% Y方向に100% */
+        transform: translate(-50%, 100%);
+    }
+    /* hover時のテキスト変更 */
+    .menu-tab li:hover span:nth-child(1) {
+        /* 透過0 */
+        opacity: 1;
+        /* X方向に-50% Y方向に-150% */
+        transform: translate(-50%, -150%);
+    }
+    .menu-tab li:hover span:nth-child(2) {
+        /* 不透明 */
+        opacity: 1;
+        /* X方向に-50% Y方向に0 */
+        transform: translate(-50%, 0);
+    }
+}
+
+
+/*==================================================
+カート
+==================================================*/
+
+.cart-icon {
+    /* マウスカーソルを指マークに */
+    cursor: pointer;
+    /* 絶対配置 */
+    position: absolute;
+    /* 色 */
+    filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%) contrast(101%);
+}
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    /* 画面サイズが390〜767pxの場合に適用（スマホ版） */
+    .cart-icon {
+        /* 位置 */
+        top: 2vw;
+        right: 2vw;
+        /* サイズ */
+        width: 8vw;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .cart-icon {
+        /* 位置 */
+        right: 1vw;
+        /* サイズ */
+        width: 2.5vw;
+    }
+}
+
+
+/*==================================================
+検索フォーム
+==================================================*/
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    #search-form {
+        /* 並行配置 */
+        display: flex;
+        /* 中央揃え */
+        justify-content: center;
+        align-items: center;
+        /* 幅 */
+        width: 100%;
+        /* 内幅（下） */
+        padding-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    #search-form {
+        /* 絶対配置 */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+    }
+}
+
+#search-form form {
+    /* 並行配置 */
+    display: flex;
+    /* 中央揃え（横） */
+    justify-content: center;
+}
+
+
+/* テキスト入力とボタンinput共通設定 */
+
+#search-form input {
+    /* SafariやChromeのデフォルトの設定を無効化 */
+    -webkit-appearance: none;
+    /* 色 */
+    color: #000000;
+}
+
+
+/* テキスト入力input設定 */
+
+#search-form input[type="text"] {
+    /* マウスカーソルをIビームに */
+    cursor: text;
+    /* 背景色 */
+    background: #ffffff;
+    /* 枠線 */
+    border-top: 1px solid #9f9f9f;
+    border-bottom: 1px solid #9f9f9f;
+    border-left: 1px solid #9f9f9f;
+    border-right: none;
+    /* 枠線形状 */
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    /* 上下左右の余白 */
+    margin: auto 0;
+    /* 表示のアニメーションを0.5秒で実行 */
+    transition: all 0.5s;
+    /* 文字間隔 */
+    letter-spacing: 0.05em;
+    /* クリック時の枠線削除 */
+    outline: none
+}
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    #search-form input[type="text"] {
+        /* 上下左右の内幅 */
+        padding: 1vw 0;
+        /* 幅 */
+        width: 50vw;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    #search-form input[type="text"] {
+        /* 上下左右の内幅 */
+        padding: 0.5vw 0;
+        /* 幅 */
+        width: 20vw;
+    }
+}
+
+
+/* ボタンinput設定 */
+
+#search-form input[type="submit"] {
+    /* マウスカーソルを指マークに */
+    cursor: pointer;
+    /*虫眼鏡アイコンを背景に表示*/
+    background: no-repeat url("../../img/search_icon.png") center;
+    /* 背景色 */
+    background-color: #ffffff;
+    /* 枠線 */
+    border-top: 1px solid #9f9f9f;
+    border-bottom: 1px solid #9f9f9f;
+    border-left: 1px solid #9f9f9f;
+    border-right: 1px solid #9f9f9f;
+    /* 枠線形状 */
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    /* 上下左右の余白 */
+    margin: auto 0;
+    /* 表示のアニメーションを0.5秒で実行 */
+    transition: all 0.5s;
+}
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    #search-form input[type="submit"] {
+        /* 虫眼鏡アイコンサイズ */
+        background-size: 7vw;
+        /* 上下左右の内幅 */
+        padding: 1vw 3vw;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    #search-form input[type="submit"] {
+        /* 虫眼鏡アイコンサイズ */
+        background-size: 2.5vw;
+        /* 上下左右の内幅 */
+        padding: 0.5vw 1vw;
+    }
+}
+
+
+/*==================================================
+検索画面
+==================================================*/
+
+
+/*=====================
+全体
+=====================*/
+
+#search-area nav {
+    /* 優先表示順 */
+    z-index: 30;
+    /* 固定配置 */
+    position: fixed;
+    top: -50vh;
+    /* 幅 */
+    width: 100vw;
+    height: 50vh;
+    /* 背景色 */
+    background: #4f4f4f;
+    /* 表示のアニメーションを0.5秒で実行 */
+    transition: all .5s;
+    /* 非表示 */
+    opacity: 0;
+}
+
+.open2 #search-area nav {
+    /* 位置 */
+    top: 0;
+    /* 表示 */
+    opacity: 1;
+}
+
+nav .search-inner {
+    /* 中央揃え */
+    justify-content: center;
+    /* 高さ */
+    height: 100%;
+}
+
+
+/*=====================
+検索フォーム
+=====================*/
+
+#search-area-form form {
+    /* 並行配置 */
+    display: flex;
+    /* 中央揃え（横） */
+    justify-content: center;
+    /* 上下左右の内幅 */
+    padding: 1vw;
+}
+
+
+/* テキスト入力とボタンinput共通設定 */
+
+#search-area-form input {
+    /* SafariやChromeのデフォルトの設定を無効化 */
+    -webkit-appearance: none;
+    /* 色 */
+    color: #000000;
+}
+
+
+/* テキスト入力input設定 */
+
+#search-area-form input[type="text"] {
+    /* マウスカーソルをIビームに */
+    cursor: text;
+    /* 枠線 */
+    border-top: 1px solid #9f9f9f;
+    border-bottom: 1px solid #9f9f9f;
+    border-left: 1px solid #9f9f9f;
+    border-right: none;
+    /* 枠線形状 */
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    /* 上下左右の余白 */
+    margin: auto 0;
+    /* 文字間隔 */
+    letter-spacing: 0.05em;
+    /* クリック時の枠線削除 */
+    outline: none
+}
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    #search-area-form input[type="text"] {
+        /* 相対配置 */
+        position: relative;
+        top: 2rem;
+        /* 上下左右の内幅 */
+        padding: 1vw 0;
+        /* 幅 */
+        width: 50vw;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    #search-area-form input[type="text"] {
+        /* 上下左右の内幅 */
+        padding: 0.5vw 0;
+        /* 幅 */
+        width: 20vw;
+    }
+}
+
+
+/* ボタンinput設定 */
+
+#search-area-form input[type="submit"] {
+    /* マウスカーソルを指マークに */
+    cursor: pointer;
+    /*虫眼鏡アイコンを背景に表示*/
+    background: no-repeat url("../../img/search_icon.png") center;
+    /* 背景色 */
+    background-color: #ffffff;
+    /* 枠線 */
+    border-top: 1px solid #9f9f9f;
+    border-bottom: 1px solid #9f9f9f;
+    border-left: 1px solid #9f9f9f;
+    border-right: 1px solid #9f9f9f;
+    /* 枠線形状 */
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    /* 上下左右の余白 */
+    margin: auto 0;
+}
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    #search-area-form input[type="submit"] {
+        /* 相対配置 */
+        position: relative;
+        top: 2rem;
+        /* 虫眼鏡アイコンサイズ */
+        background-size: 7vw;
+        /* 上下左右の内幅 */
+        padding: 1vw 3vw;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    #search-area-form input[type="submit"] {
+        /* 虫眼鏡アイコンサイズ */
+        background-size: 2.5vw;
+        /* 上下左右の内幅 */
+        padding: 0.5vw 1vw;
+    }
+}
+
+
+/*=====================
+カテゴリー
+=====================*/
+
+
+/* カテゴリーホバー時 */
+
+nav .search-inner ul li a:hover {
+    /* ホバー時の背景色 */
+    background: #e4e4e4;
+}
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    .category {
+        /* 並行配置 */
+        display: flex;
+        /* 幅 */
+        width: 50vw;
+        /* 上下左右の余白 */
+        margin: 4rem auto 0;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .category {
+        /* 並行配置 */
+        display: flex;
+        /* 幅 */
+        width: 30vw;
+        /* 上下左右の余白 */
+        margin: 1rem auto 0;
+    }
+}
+
+.category ul {
+    /* 黒点削除 */
+    list-style: none;
+    /* 上下左右の内幅 */
+    padding: 0;
+    /* 上下左右の余白 */
+    margin: 0 auto;
+    /* カテゴリー間隔を設定 */
+    line-height: 0;
+}
+
+.category ul li {
+    /* 相対配置 */
+    position: relative;
+    /* 下線 */
+    border-bottom: 1px solid #ffffff;
+    /* 上下左右の余白 */
+    margin: 1rem 0;
+}
+
+.category ul li a {
+    display: block;
+    /* 文字色 */
+    color: #ffffff;
+    /* 文字サイズ */
+    font-size: 14px;
+    /* 上下左右の内幅 */
+    padding: 1rem;
+    /* 文字装飾（下線）削除 */
+    text-decoration: none;
+    /* ホバー時のアニメーションを0.2秒で実行 */
+    transition-duration: 0.2s;
+}
+
+
+/*=====================
+クローズボタン
+=====================*/
+
+@media screen and (min-width: 390px) and (max-width: 767px) {
+    .close_btn {
+        /* 優先表示順 */
+        z-index: 30;
+        /* マウスカーソルを指マークに */
+        cursor: pointer;
+        /* 絶対配置 */
+        position: absolute;
+        top: 3rem;
+        right: 2vw;
+        /* 幅 */
+        width: 7vw;
+        /* 縁取り */
+        filter: drop-shadow(0 0 1.5px #2f2f2f);
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .close_btn {
+        /* 優先表示順 */
+        z-index: 30;
+        /* マウスカーソルを指マークに */
+        cursor: pointer;
+        /* 絶対配置 */
+        position: absolute;
+        top: 1vw;
+        right: 2vw;
+        /* 幅 */
+        width: 3vw;
+        /* 縁取り */
+        filter: drop-shadow(0 0 1.5px #2f2f2f);
+    }
+}
+
+.close_btn span {
+    /* 絶対配置 */
+    position: absolute;
+    /* ラインの太さ */
+    height: 0.5vw;
+    /* ラインの色 */
+    background: #ffffff;
+    /* 幅いっぱいの大きさ */
+    width: 100%;
+}
+
+.close_btn span:nth-of-type(1),
+.close_btn span:nth-of-type(3) {
+    width: 90%;
+}
+
+.close_btn span:nth-of-type(1) {
+    /* 位置 */
+    top: 1vw;
+    left: 0;
+    transform: translateY(0) rotate(-45deg);
+    /* サイズ */
+    width: 90%;
+}
+
+.close_btn span:nth-of-type(2) {
+    /* 非表示 */
+    opacity: 0;
+}
+
+.close_btn span:nth-of-type(3) {
+    /* 位置 */
+    top: 1vw;
+    left: 0;
+    transform: translateY(0) rotate(45deg);
+    /* サイズ */
+    width: 90%;
+}
