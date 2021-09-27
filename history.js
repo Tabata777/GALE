@@ -2,8 +2,8 @@
 共通部分読み込み
 ==================================================*/
 $(function() {
-    $("#header").load("common/header.html");
-    $("#footer").load("common/footer.html");
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
 });
 
 /*==================================================
@@ -31,11 +31,11 @@ $('.slider_favorite').slick({
 // 画像リスト
 if (window.matchMedia('(min-width: 1025px)').matches) {
     var pathList_favorite = [
-        "../img/item_0004.jpg",
-        "../img/item_0005.jpg",
-        "../img/item_0006.jpg",
-        "../img/item_0002.jpg",
-        "../img/item_0003.jpg",
+        "item_0004.jpg",
+        "item_0005.jpg",
+        "item_0006.jpg",
+        "item_0002.jpg",
+        "item_0003.jpg",
     ];
 
     // 配列
@@ -80,11 +80,11 @@ $('.slider_trend').slick({
 if (window.matchMedia('(min-width: 1025px)').matches) {
     // 画像リスト
     var pathList_trend = [
-        "../img/item_0004.jpg",
-        "../img/item_0005.jpg",
-        "../img/item_0006.jpg",
-        "../img/item_0002.jpg",
-        "../img/item_0003.jpg",
+        "item_0004.jpg",
+        "item_0005.jpg",
+        "item_0006.jpg",
+        "item_0002.jpg",
+        "item_0003.jpg",
     ];
 
     // 配列
