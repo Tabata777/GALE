@@ -555,7 +555,7 @@ GALEアイコン
     /* マウスカーソルを指マークに */
     cursor: pointer;
     /*虫眼鏡アイコンを背景に表示*/
-    background: no-repeat url("../../img/search_icon.png") center;
+    background: no-repeat url("search_icon.png") center;
     /* 背景色 */
     background-color: #ffffff;
     /* 枠線 */
@@ -707,7 +707,7 @@ nav .search-inner {
     /* マウスカーソルを指マークに */
     cursor: pointer;
     /*虫眼鏡アイコンを背景に表示*/
-    background: no-repeat url("../../img/search_icon.png") center;
+    background: no-repeat url("search_icon.png") center;
     /* 背景色 */
     background-color: #ffffff;
     /* 枠線 */
