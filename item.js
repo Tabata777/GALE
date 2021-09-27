@@ -2,8 +2,8 @@
 共通部分読み込み
 ==================================================*/
 $(function() {
-    $("#header").load("common/header.html");
-    $("#footer").load("common/footer.html");
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
 });
     
 /*==================================================
