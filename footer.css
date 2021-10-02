@@ -3,15 +3,13 @@
 ==================================================*/
 
 @media screen and (min-width: 390px) and (max-width: 767px) {
-    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
     html {
         /* 文字サイズ10px(1rem) */
         font-size: 62.5%;
     }
 }
 
-@media screen and (min-width: 1025px) {
-    /* 画面サイズが1025px以上の場合に適用（PC版） */
+@media screen and (min-width: 768px) {
     html {
         /* 文字サイズ15px(1rem) */
         font-size: 93.75%;
@@ -45,7 +43,6 @@ footer {
 /* 全体設定 */
 
 @media screen and (min-width: 390px) and (max-width: 767px) {
-    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
     footer ul {
         /* 黒点削除 */
         list-style: none;
@@ -56,8 +53,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 1025px) {
-    /* 画面サイズが1025px以上の場合に適用（PC版） */
+@media screen and (min-width: 768px) {
     footer ul {
         /* 絶対配置 */
         position: absolute;
@@ -77,7 +73,6 @@ footer {
 /* ボタン */
 
 @media screen and (min-width: 390px) and (max-width: 767px) {
-    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
     .etc-link li {
         /* 文字色 */
         color: #ffffff;
@@ -94,8 +89,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 1025px) {
-    /* 画面サイズが1025px以上の場合に適用（PC版） */
+@media screen and (min-width: 768px) {
     .etc-link li {
         /* マウスカーソルを指マークに */
         cursor: pointer;
@@ -114,7 +108,6 @@ footer {
 /* アイコン */
 
 @media screen and (min-width: 390px) and (max-width: 767px) {
-    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
     footer img {
         /* アスペクト比維持 */
         object-fit: contain;
@@ -124,8 +117,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 1025px) {
-    /* 画面サイズが1025px以上の場合に適用（PC版） */
+@media screen and (min-width: 768px) {
     footer img {
         /* アスペクト比維持 */
         object-fit: contain;
