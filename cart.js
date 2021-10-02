@@ -75,7 +75,7 @@ $('.slider_favorite').slick({
 });
 
 // 画像リスト
-if (window.matchMedia('(min-width: 1025px)').matches) {
+if (window.matchMedia('(min-width: 768px)').matches) {
     var pathList_favorite = [
         "item_0004.jpg",
         "item_0005.jpg",
@@ -124,7 +124,7 @@ $('.slider_history').slick({
 });
 
 // 画像リスト
-if (window.matchMedia('(min-width: 1025px)').matches) {
+if (window.matchMedia('(min-width: 768px)').matches) {
     var pathList_history = [
         "item_0004.jpg",
     ];
@@ -162,7 +162,7 @@ $('.slider_trend').slick({
     // variableWidth: true,
 });
 
-if (window.matchMedia('(min-width: 1025px)').matches) {
+if (window.matchMedia('(min-width: 768px)').matches) {
     // 画像リスト
     var pathList_trend = [
         "item_0004.jpg",
