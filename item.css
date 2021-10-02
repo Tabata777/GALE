@@ -3,7 +3,6 @@
 ==================================================*/
 
 @media screen and (min-width: 390px) and (max-width: 767px) {
-    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
     html {
         /* 文字サイズ10px(1rem) */
         font-size: 62.5%;
@@ -12,8 +11,7 @@
     }
 }
 
-@media screen and (min-width: 1025px) {
-    /* 画面サイズが1025px以上の場合に適用（PC版） */
+@media screen and (min-width: 768px) {
     html {
         /* 文字サイズ15px(1rem) */
         font-size: 93.75%;
@@ -40,7 +38,6 @@ body {
 /* 全体 */
 
 @media screen and (min-width: 390px) and (max-width: 767px) {
-    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
     .main-item {
         /* 相対位置 */
         position: relative;
@@ -52,8 +49,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1025px) {
-    /* 画面サイズが1025px以上の場合に適用（PC版） */
+@media screen and (min-width: 768px) {
     .main-item {
         /* 並行配置 */
         display: flex;
@@ -71,7 +67,6 @@ body {
 /* 商品画像 */
 
 @media screen and (min-width: 390px) and (max-width: 767px) {
-    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
     .main-item img {
         /* 画像サイズ */
         width: 100vw;
@@ -79,8 +74,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1025px) {
-    /* 画面サイズが1025px以上の場合に適用（PC版） */
+@media screen and (min-width: 768px) {
     .main-item img {
         /* 画像サイズ */
         width: 35vw;
@@ -96,7 +90,6 @@ body {
 /* 商品詳細エリア */
 
 @media screen and (min-width: 390px) and (max-width: 767px) {
-    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
     .item-details {
         /* 相対配置 */
         position: relative;
@@ -107,8 +100,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1025px) {
-    /* 画面サイズが1025px以上の場合に適用（PC版） */
+@media screen and (min-width: 768px) {
     .item-details {
         /* 幅 */
         width: 45vw;
@@ -121,7 +113,6 @@ body {
 /* 商品名英字 */
 
 @media screen and (min-width: 390px) and (max-width: 767px) {
-    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
     .item-details h1 {
         /* フォント */
         font-family: Impact, 'Arial Narrow Bold', sans-serif;
@@ -136,8 +127,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1025px) {
-    /* 画面サイズが1025px以上の場合に適用（PC版） */
+@media screen and (min-width: 768px) {
     .item-details h1 {
         /* フォント */
         font-family: Impact, 'Arial Narrow Bold', sans-serif;
@@ -156,7 +146,6 @@ body {
 /* 商品名カナ */
 
 @media screen and (min-width: 390px) and (max-width: 767px) {
-    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
     .sp_itemName {
         /* 絶対配置 */
         position: absolute;
@@ -173,8 +162,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1025px) {
-    /* 画面サイズが1025px以上の場合に適用（PC版） */
+@media screen and (min-width: 768px) {
     .sp_itemName {
         /* 非表示 */
         display: none;
@@ -182,15 +170,13 @@ body {
 }
 
 @media screen and (min-width: 390px) and (max-width: 767px) {
-    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
     .pc_itemName {
         /* 非表示 */
         display: none;
     }
 }
 
-@media screen and (min-width: 1025px) {
-    /* 画面サイズが1025px以上の場合に適用（PC版） */
+@media screen and (min-width: 768px) {
     .pc_itemName {
         /* 文字サイズ */
         font-size: 1.5vw;
@@ -207,15 +193,13 @@ body {
 /* サイズエリア */
 
 @media screen and (min-width: 390px) and (max-width: 767px) {
-    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
     .size-area {
         /* 上下左右の余白 */
         margin: 2vw 0 0 3vw;
     }
 }
 
-@media screen and (min-width: 1025px) {
-    /* 画面サイズが1025px以上の場合に適用（PC版） */
+@media screen and (min-width: 768px) {
     .size-area {
         /* 上下左右の余白 */
         margin: 0;
@@ -226,7 +210,6 @@ body {
 /* サイズ文言 */
 
 @media screen and (min-width: 390px) and (max-width: 767px) {
-    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
     .size-area h3 {
         /* フォント */
         font-family: Impact, 'Arial Narrow Bold', sans-serif;
@@ -237,8 +220,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1025px) {
-    /* 画面サイズが1025px以上の場合に適用（PC版） */
+@media screen and (min-width: 768px) {
     .size-area h3 {
         /* フォント */
         font-family: Impact, 'Arial Narrow Bold', sans-serif;
@@ -250,7 +232,6 @@ body {
 }
 
 @media screen and (min-width: 390px) and (max-width: 767px) {
-    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
     .size-button {
         /* フォント */
         font-family: Impact, 'Arial Narrow Bold', sans-serif;
@@ -259,8 +240,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1025px) {
-    /* 画面サイズが1025px以上の場合に適用（PC版） */
+@media screen and (min-width: 768px) {
     .size-button {
         /* フォント */
         font-family: Impact, 'Arial Narrow Bold', sans-serif;
@@ -278,7 +258,6 @@ body {
 /* 枠線 */
 
 @media screen and (min-width: 390px) and (max-width: 767px) {
-    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
     .size-button label {
         /* 背景色と同化 */
         color: transparent;
@@ -301,8 +280,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1025px) {
-    /* 画面サイズが1025px以上の場合に適用（PC版） */
+@media screen and (min-width: 768px) {
     .size-button label {
         /* 背景色と同化 */
         color: transparent;
@@ -347,15 +325,13 @@ body {
 /* カラーエリア */
 
 @media screen and (min-width: 390px) and (max-width: 767px) {
-    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
     .culor-area {
         /* 上下左右の余白 */
         margin: 0 0 10vw 3vw;
     }
 }
 
-@media screen and (min-width: 1025px) {
-    /* 画面サイズが1025px以上の場合に適用（PC版） */
+@media screen and (min-width: 768px) {
     .culor-area {
         /* 上下左右の余白 */
         margin: 0 0 3vw;
@@ -366,7 +342,6 @@ body {
 /* カラー文言 */
 
 @media screen and (min-width: 390px) and (max-width: 767px) {
-    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
     .culor-area h4 {
         /* フォント */
         font-family: Impact, 'Arial Narrow Bold', sans-serif;
@@ -377,8 +352,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1025px) {
-    /* 画面サイズが1025px以上の場合に適用（PC版） */
+@media screen and (min-width: 768px) {
     .culor-area h4 {
         /* フォント */
         font-family: Impact, 'Arial Narrow Bold', sans-serif;
@@ -401,7 +375,6 @@ body {
 /* 枠線 */
 
 @media screen and (min-width: 390px) and (max-width: 767px) {
-    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
     .culor-button label {
         /* 枠線 */
         border: 0.1rem solid #2f2f2f;
@@ -420,8 +393,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1025px) {
-    /* 画面サイズが1025px以上の場合に適用（PC版） */
+@media screen and (min-width: 768px) {
     .culor-button label {
         /* 枠線 */
         border: 0.1rem solid #2f2f2f;
@@ -480,7 +452,6 @@ body {
 /* 価格 */
 
 @media screen and (min-width: 390px) and (max-width: 767px) {
-    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
     .item-details h5 {
         /* 文字サイズ */
         font-size: 13vw;
@@ -491,8 +462,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1025px) {
-    /* 画面サイズが1025px以上の場合に適用（PC版） */
+@media screen and (min-width: 768px) {
     .item-details h5 {
         /* 文字サイズ */
         font-size: 4vw;
@@ -507,7 +477,6 @@ body {
 /* 商品説明文 */
 
 @media screen and (min-width: 390px) and (max-width: 767px) {
-    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
     .item-details p {
         /* 文字サイズ */
         font-size: 3.5vw;
@@ -516,8 +485,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1025px) {
-    /* 画面サイズが1025px以上の場合に適用（PC版） */
+@media screen and (min-width: 768px) {
     .item-details p {
         /* 文字サイズ */
         font-size: 1.5vw;
@@ -530,7 +498,6 @@ body {
 /* カート・お気に入りボタン */
 
 @media screen and (min-width: 390px) and (max-width: 767px) {
-    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
     .item-button {
         /* 要素並行 */
         display: flex;
@@ -543,8 +510,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1025px) {
-    /* 画面サイズが1025px以上の場合に適用（PC版） */
+@media screen and (min-width: 768px) {
     .item-button {
         /* 絶対配置 */
         position: absolute;
@@ -560,7 +526,6 @@ body {
 /* カートに入れるボタン */
 
 @media screen and (min-width: 390px) and (max-width: 767px) {
-    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
     .item-button button {
         /* 文字色 */
         color: #ffffff;
@@ -579,8 +544,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1025px) {
-    /* 画面サイズが1025px以上の場合に適用（PC版） */
+@media screen and (min-width: 768px) {
     .item-button button {
         /* 文字色 */
         color: #ffffff;
@@ -606,7 +570,6 @@ body {
 /* アイコン */
 
 @media screen and (min-width: 390px) and (max-width: 767px) {
-    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
     .heart-icon {
         /* 上下左右の余白 */
         margin: auto 2vw;
@@ -619,8 +582,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1025px) {
-    /* 画面サイズが1025px以上の場合に適用（PC版） */
+@media screen and (min-width: 768px) {
     .heart-icon {
         /* 上下左右の余白 */
         margin: auto 2vw;
@@ -683,7 +645,6 @@ body {
 /*ドットナビゲーションの設定*/
 
 @media screen and (min-width: 390px) and (max-width: 767px) {
-    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
     .slick-dots {
         /* 中央揃え */
         text-align: center;
@@ -766,7 +727,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
     /* タイトル_エリア */
     .title {
         /* 相対配置 */
@@ -907,7 +868,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
     .item-pr {
         /* 非表示 */
         display: none;
@@ -932,7 +893,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
     /* 全体設定 */
     .slider_favorite,
     .slider_history,
