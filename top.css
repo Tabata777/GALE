@@ -3,15 +3,13 @@
 ==================================================*/
 
 @media screen and (min-width: 390px) and (max-width: 767px) {
-    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
     html {
         /* 文字サイズ10px(1rem) */
         font-size: 62.5%;
     }
 }
 
-@media screen and (min-width: 1025px) {
-    /* 画面サイズが1025px以上の場合に適用（PC版） */
+@media screen and (min-width: 768px) {
     html {
         /* 文字サイズ15px(1rem) */
         font-size: 93.75%;
@@ -231,7 +229,6 @@ TREND
 /* 商品名英字 */
 
 @media screen and (min-width: 390px) and (max-width: 767px) {
-    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
     .item-details h1 {
         /* フォント */
         font-family: Impact, 'Arial Narrow Bold', sans-serif;
@@ -246,8 +243,7 @@ TREND
     }
 }
 
-@media screen and (min-width: 1025px) {
-    /* 画面サイズが1025px以上の場合に適用（PC版） */
+@media screen and (min-width: 768px) {
     .item-details h1 {
         /* フォント */
         font-family: Impact, 'Arial Narrow Bold', sans-serif;
@@ -294,7 +290,6 @@ TREND
 /* 商品説明文 */
 
 @media screen and (min-width: 390px) and (max-width: 767px) {
-    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
     .item-details p {
         /* 文字サイズ */
         font-size: 2.5vw;
@@ -303,8 +298,7 @@ TREND
     }
 }
 
-@media screen and (min-width: 1025px) {
-    /* 画面サイズが1025px以上の場合に適用（PC版） */
+@media screen and (min-width: 768px) {
     .item-details p {
         /* 文字サイズ */
         font-size: 2vw;
@@ -409,7 +403,6 @@ GALE概要
 /* 背景画像 */
 
 @media screen and (min-width: 390px) and (max-width: 767px) {
-    /* 画面サイズが390〜767pxの場合に適用（スマホ版）*/
     .introduction-back {
         /* 中央揃え */
         background-position: center;
@@ -423,8 +416,7 @@ GALE概要
     }
 }
 
-@media screen and (min-width: 1025px) {
-    /* 画面サイズが1025px以上の場合に適用（PC版） */
+@media screen and (min-width: 768px) {
     .introduction-back {
         /* 中央揃え */
         background-position: center;
@@ -462,7 +454,7 @@ Twitter・Instagram
 
 /* Twitter */
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
     .sns-icon {
         /* 並行配置 */
         display: flex;
@@ -484,7 +476,7 @@ Twitter・Instagram
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
     .twitter {
         /* 右枠線 */
         border-right: solid 1px #7f7f7f;
@@ -526,7 +518,7 @@ Twitter・Instagram
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
     .instagram {
         /* 左枠線 */
         border-left: solid 1px #7f7f7f;
