@@ -9,7 +9,7 @@
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
     html {
         /* 文字サイズ15px(1rem) */
         font-size: 93.75%;
@@ -63,7 +63,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
     /* タイトル_エリア */
     .history-title {
         /* 相対配置 */
@@ -115,7 +115,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
     .main-title {
         /* 幅 */
         width: 90vw;
@@ -133,7 +133,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
     .main-title h1 {
         /* 文字サイズ */
         font-size: 3.5vw;
@@ -171,7 +171,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
     .history-item {
         /* 並行配置 */
         display: flex;
@@ -328,7 +328,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
     .next-btn button {
         /* 背景色 */
         background-color: #4f4f4f;
@@ -378,7 +378,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
     .check-item {
         /* 並行配置 */
         display: flex;
@@ -501,7 +501,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
     /* タイトル_エリア */
     .title {
         /* 相対配置 */
@@ -642,7 +642,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
     .item-pr {
         /* 非表示 */
         display: none;
@@ -669,7 +669,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
     /* 全体設定 */
     .slider_favorite,
     .slider_trend {
