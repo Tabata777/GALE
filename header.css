@@ -9,7 +9,7 @@
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
     html {
         /* 文字サイズ15px(1rem) */
         font-size: 93.75%;
@@ -260,7 +260,7 @@ header {
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
     #menu-area {
         /* 非表示 */
         display: none;
@@ -288,7 +288,7 @@ GALEアイコン
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
     .gale-icon {
         /* 絶対配置 */
         position: absolute;
@@ -320,7 +320,7 @@ GALEアイコン
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
     .login-icon {
         /* 位置 */
         right: 5vw;
@@ -341,7 +341,7 @@ GALEアイコン
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
     .menu-tab {
         /* マウスカーソルを指マークに */
         cursor: pointer;
@@ -442,7 +442,7 @@ GALEアイコン
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
     .cart-icon {
         /* 位置 */
         right: 1vw;
@@ -470,7 +470,7 @@ GALEアイコン
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
     #search-form {
         /* 絶対配置 */
         position: absolute;
@@ -532,7 +532,7 @@ GALEアイコン
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
     #search-form input[type="text"] {
         /* 上下左右の内幅 */
         padding: 0.5vw 0;
@@ -574,7 +574,7 @@ GALEアイコン
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
     #search-form input[type="submit"] {
         /* 虫眼鏡アイコンサイズ */
         background-size: 2.5vw;
@@ -682,7 +682,7 @@ nav .search-inner {
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
     #search-area-form input[type="text"] {
         /* 上下左右の内幅 */
         padding: 0.5vw 0;
@@ -725,7 +725,7 @@ nav .search-inner {
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
     #search-area-form input[type="submit"] {
         /* 虫眼鏡アイコンサイズ */
         background-size: 2.5vw;
@@ -758,7 +758,7 @@ nav .search-inner ul li a:hover {
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
     .category {
         /* 並行配置 */
         display: flex;
@@ -825,7 +825,7 @@ nav .search-inner ul li a:hover {
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
     .close_btn {
         /* 優先表示順 */
         z-index: 30;
