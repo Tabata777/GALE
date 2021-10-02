@@ -86,7 +86,7 @@ $('.slider_favorite').slick({
     dots: false,
 });
 
-if (window.matchMedia('(min-width: 1025px)').matches) {
+if (window.matchMedia('(min-width: 768px)').matches) {
     // 画像リスト
     var pathList_favorite = [
         "item_0004.jpg",
@@ -135,7 +135,7 @@ $('.slider_history').slick({
     // variableWidth: true,
 });
 
-if (window.matchMedia('(min-width: 1025px)').matches) {
+if (window.matchMedia('(min-width: 768px)').matches) {
     // 画像リスト
     var pathList_history = [
         "item_0004.jpg",
@@ -174,7 +174,7 @@ $('.slider_trend').slick({
     // variableWidth: true,
 });
 
-if (window.matchMedia('(min-width: 1025px)').matches) {
+if (window.matchMedia('(min-width: 768px)').matches) {
     // 画像リスト
     var pathList_trend = [
        "item_0004.jpg",
