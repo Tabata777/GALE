@@ -9,7 +9,7 @@
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
     html {
         /* 文字サイズ15px(1rem) */
         font-size: 93.75%;
@@ -63,7 +63,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
     /* タイトル_エリア */
     .favorite-title {
         /* 相対配置 */
@@ -130,7 +130,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
     .favorite-item {
         /* 並行配置 */
         display: flex;
@@ -295,7 +295,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
     /* タイトル_エリア */
     .title {
         /* 相対配置 */
@@ -436,7 +436,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
     .item-pr {
         /* 非表示 */
         display: none;
@@ -463,7 +463,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 768px) {
     /* 全体設定 */
     .slider_history,
     .slider_trend {
