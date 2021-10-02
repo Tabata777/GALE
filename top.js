@@ -45,24 +45,14 @@ $('.check-pic').slick({
     //下部ドットナビゲーションの表示
     dots: true,
     responsive: [{
-            //モニターの横幅が769px以下の見せ方
-            breakpoint: 769,
-            settings: {
-                //スライドを画面に2枚見せる
-                slidesToShow: 1,
-                //1回のスクロールで2枚の写真を移動して見せる
-                slidesToScroll: 1,
-            }
-        },
-        {
-            //モニターの横幅が426px以下の見せ方
-            breakpoint: 426,
+            //モニターの横幅が767px以下の見せ方
+            breakpoint: 767,
             settings: {
                 //スライドを画面に1枚見せる
                 slidesToShow: 1,
                 //1回のスクロールで1枚の写真を移動して見せる
                 slidesToScroll: 1,
             }
-        }
+        },
     ]
 });
