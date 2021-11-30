@@ -2,7 +2,7 @@
 全体設定
 ==================================================*/
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     html {
         /* 文字サイズ10px(1rem) */
         font-size: 62.5%;
@@ -73,7 +73,7 @@ header {
 ハンバーガーメニュー
 ==================================================*/
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     /*=====================
     メニューボタン
     =====================*/
@@ -286,7 +286,7 @@ GALEアイコン
     object-fit: contain;
 }
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .gale-icon {
         /* サイズ */
         width: 13vw;
@@ -315,7 +315,7 @@ GALEアイコン
     position: absolute;
 }
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .login-icon {
         /* 位置 */
         top: 2vw;
@@ -339,7 +339,7 @@ GALEアイコン
 メニュータブ
 ==================================================*/
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .menu-tab {
         /* 非表示 */
         display: none;
@@ -436,7 +436,7 @@ GALEアイコン
     filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%) contrast(101%);
 }
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     /* 画面サイズが390〜767pxの場合に適用（スマホ版） */
     .cart-icon {
         /* 位置 */
@@ -461,7 +461,7 @@ GALEアイコン
 検索フォーム
 ==================================================*/
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     #search-form {
         /* 並行配置 */
         display: flex;
@@ -530,7 +530,7 @@ GALEアイコン
     outline: none
 }
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     #search-form input[type="text"] {
         /* 上下左右の内幅 */
         padding: 1vw 0;
@@ -574,7 +574,7 @@ GALEアイコン
     transition: all 0.5s;
 }
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     #search-form input[type="submit"] {
         /* 虫眼鏡アイコンサイズ */
         background-size: 7vw;
@@ -679,7 +679,7 @@ nav .search-inner {
     outline: none
 }
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     #search-area-form input[type="text"] {
         /* 相対配置 */
         position: relative;
@@ -722,7 +722,7 @@ nav .search-inner {
     margin: auto 0;
 }
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     #search-area-form input[type="submit"] {
         /* 相対配置 */
         position: relative;
@@ -756,7 +756,7 @@ nav .search-inner ul li a:hover {
     background: #e4e4e4;
 }
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .category {
         /* 並行配置 */
         display: flex;
@@ -817,7 +817,7 @@ nav .search-inner ul li a:hover {
 クローズボタン
 =====================*/
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .close_btn {
         /* 優先表示順 */
         z-index: 30;
