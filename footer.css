@@ -2,7 +2,7 @@
 全体設定
 ==================================================*/
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     html {
         /* 文字サイズ10px(1rem) */
         font-size: 62.5%;
@@ -42,7 +42,7 @@ footer {
 
 /* 全体設定 */
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     footer ul {
         /* 黒点削除 */
         list-style: none;
@@ -72,7 +72,7 @@ footer {
 
 /* ボタン */
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .etc-link li {
         /* 文字色 */
         color: #ffffff;
@@ -107,7 +107,7 @@ footer {
 
 /* アイコン */
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     footer img {
         /* アスペクト比維持 */
         object-fit: contain;
