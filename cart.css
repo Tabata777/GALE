@@ -2,7 +2,7 @@
 全体設定
 ==================================================*/
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     html {
         /* 文字サイズ10px(1rem) */
         font-size: 62.5%;
@@ -31,7 +31,7 @@ body {
 
 /* 全体 */
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .cash-button {
         /* 優先度 */
         z-index: 100;
@@ -63,7 +63,7 @@ body {
     }
 }
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .cash-button button {
         /* 文字色 */
         color: #2f2f2f;
@@ -120,7 +120,7 @@ body {
 
 /* 各商品_エリア */
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .cart-item {
         /* 並行配置 */
         display: flex;
@@ -334,7 +334,7 @@ body {
 
 /* 削除ボタン */
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .spinner-container button {
         /* 文字色 */
         color: #ffffff;
@@ -395,7 +395,7 @@ body {
 タイトル（お気に入り、注文履歴、トレンド）
 ==================================================*/
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     /* タイトル_エリア */
     .title {
         /* 上下左右の余白 */
@@ -465,7 +465,7 @@ body {
 商品（お気に入り、注文履歴、トレンド）
 ==================================================*/
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     /* 全体 */
     .item-pr {
         /* 並行配置 */
@@ -587,7 +587,7 @@ body {
 
 /* 全体設定 */
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .slider_favorite,
     .slider_history,
     .slider_trend {
