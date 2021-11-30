@@ -2,7 +2,7 @@
 全体設定
 ==================================================*/
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     html {
         /* 文字サイズ10px(1rem) */
         font-size: 62.5%;
@@ -37,7 +37,7 @@ body {
 
 /* 全体 */
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .main-item {
         /* 相対位置 */
         position: relative;
@@ -66,7 +66,7 @@ body {
 
 /* 商品画像 */
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .main-item img {
         /* 画像サイズ */
         width: 100vw;
@@ -89,7 +89,7 @@ body {
 
 /* 商品詳細エリア */
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .item-details {
         /* 相対配置 */
         position: relative;
@@ -112,7 +112,7 @@ body {
 
 /* 商品名英字 */
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .item-details h1 {
         /* フォント */
         font-family: Impact, 'Arial Narrow Bold', sans-serif;
@@ -145,7 +145,7 @@ body {
 
 /* 商品名カナ */
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .sp_itemName {
         /* 絶対配置 */
         position: absolute;
@@ -169,7 +169,7 @@ body {
     }
 }
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .pc_itemName {
         /* 非表示 */
         display: none;
@@ -192,7 +192,7 @@ body {
 
 /* サイズエリア */
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .size-area {
         /* 上下左右の余白 */
         margin: 2vw 0 0 3vw;
@@ -209,7 +209,7 @@ body {
 
 /* サイズ文言 */
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .size-area h3 {
         /* フォント */
         font-family: Impact, 'Arial Narrow Bold', sans-serif;
@@ -231,7 +231,7 @@ body {
     }
 }
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .size-button {
         /* フォント */
         font-family: Impact, 'Arial Narrow Bold', sans-serif;
@@ -257,7 +257,7 @@ body {
 
 /* 枠線 */
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .size-button label {
         /* 背景色と同化 */
         color: transparent;
@@ -324,7 +324,7 @@ body {
 
 /* カラーエリア */
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .culor-area {
         /* 上下左右の余白 */
         margin: 0 0 10vw 3vw;
@@ -341,7 +341,7 @@ body {
 
 /* カラー文言 */
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .culor-area h4 {
         /* フォント */
         font-family: Impact, 'Arial Narrow Bold', sans-serif;
@@ -374,7 +374,7 @@ body {
 
 /* 枠線 */
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .culor-button label {
         /* 枠線 */
         border: 0.1rem solid #2f2f2f;
@@ -451,7 +451,7 @@ body {
 
 /* 価格 */
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .item-details h5 {
         /* 文字サイズ */
         font-size: 13vw;
@@ -476,7 +476,7 @@ body {
 
 /* 商品説明文 */
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .item-details p {
         /* 文字サイズ */
         font-size: 3.5vw;
@@ -497,7 +497,7 @@ body {
 
 /* カート・お気に入りボタン */
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .item-button {
         /* 要素並行 */
         display: flex;
@@ -525,7 +525,7 @@ body {
 
 /* カートに入れるボタン */
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .item-button button {
         /* 文字色 */
         color: #ffffff;
@@ -569,7 +569,7 @@ body {
 
 /* アイコン */
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .heart-icon {
         /* 上下左右の余白 */
         margin: auto 2vw;
@@ -644,7 +644,7 @@ body {
 
 /*ドットナビゲーションの設定*/
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .slick-dots {
         /* 中央揃え */
         text-align: center;
@@ -687,7 +687,7 @@ body {
 タイトル（お気に入り、注文履歴、トレンド）
 ==================================================*/
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     #title-favorite,
     #title-history {
         /* 非表示 */
@@ -695,7 +695,7 @@ body {
     }
 }
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     /* タイトル_エリア */
     .title {
         /* 上下左右の余白 */
@@ -765,7 +765,7 @@ body {
 商品（お気に入り、注文履歴、トレンド）
 ==================================================*/
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     /* 全体 */
     .item-pr {
         /* 並行配置 */
@@ -884,7 +884,7 @@ body {
 スライド（お気に入り、注文履歴、トレンド）
 ==================================================*/
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .slider_favorite,
     .slider_history,
     .slider_trend {
