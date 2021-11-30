@@ -2,7 +2,7 @@
 全体設定
 ==================================================*/
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     html {
         /* 文字サイズ10px(1rem) */
         font-size: 62.5%;
@@ -28,7 +28,7 @@ body {
 タイトル（注文履歴）
 ==================================================*/
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     /* タイトル_エリア */
     .history-title {
         /* 相対配置 */
@@ -101,7 +101,7 @@ body {
 注文履歴
 ==================================================*/
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .main-title {
         /* 幅 */
         width: 90vw;
@@ -124,7 +124,7 @@ body {
     }
 }
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .main-title h1 {
         /* 文字サイズ */
         font-size: 5vw;
@@ -145,7 +145,7 @@ body {
 
 /* 各商品_エリア */
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .history-item {
         /* 並行配置 */
         display: flex;
@@ -309,7 +309,7 @@ body {
     text-align: center;
 }
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .next-btn button {
         /* 背景色 */
         background-color: #4f4f4f;
@@ -355,7 +355,7 @@ body {
 
 /* 各商品_エリア */
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .check-item {
         /* 並行配置 */
         display: flex;
@@ -469,7 +469,7 @@ body {
 タイトル（お気に入り、トレンド）
 ==================================================*/
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     /* タイトル_エリア */
     .title {
         /* 上下左右の余白 */
@@ -539,7 +539,7 @@ body {
 商品（お気に入り、トレンド）
 ==================================================*/
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     /* 全体 */
     .item-pr {
         /* 並行配置 */
@@ -661,7 +661,7 @@ body {
 
 /* 全体設定 */
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .slider_favorite,
     .slider_trend {
         /* 非表示 */
