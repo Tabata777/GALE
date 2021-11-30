@@ -2,7 +2,7 @@
 全体設定
 ==================================================*/
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     html {
         /* 文字サイズ10px(1rem) */
         font-size: 62.5%;
@@ -39,7 +39,7 @@ body {
 
 /* 背景画像 */
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .main-back {
         /* 中央揃え */
         background-position: center;
@@ -70,7 +70,7 @@ body {
 
 /* 背景画像透過設定 */
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .trend-main::before {
         /* 透過した黒を上から重ねる */
         background-color: rgba(0, 0, 0, 0.400);
@@ -106,7 +106,7 @@ body {
     }
 }
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .trend-title {
         /* 絶対配置 */
         position: absolute;
@@ -134,7 +134,7 @@ body {
     }
 }
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .trend-title h1 {
         /* フォント */
         font-family: Impact, 'Arial Narrow Bold', sans-serif;
@@ -156,7 +156,7 @@ body {
     }
 }
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .trend-title h2 {
         /* 文字サイズ */
         font-size: 3vw;
@@ -174,7 +174,7 @@ body {
     }
 }
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .trend-title h3 {
         /* 文字サイズ */
         font-size: 2.5vw;
@@ -196,7 +196,7 @@ body {
 
 /* 各商品_エリア */
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .trend-item {
         /* 並行配置 */
         display: flex;
@@ -232,7 +232,7 @@ body {
 
 /* 各商品_画像 */
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     #pc-img {
         /* 非表示 */
         display: none;
@@ -246,7 +246,7 @@ body {
     }
 }
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .trend-item img {
         /* サイズ */
         width: 50vw;
@@ -270,7 +270,7 @@ body {
     }
 }
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     #trend-item2 img {
         position: relative;
         left: 40vw;
@@ -287,7 +287,7 @@ body {
 
 /* 商品詳細 */
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .trend-details {
         /* 絶対配置 */
         position: absolute;
@@ -313,7 +313,7 @@ body {
     }
 }
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     #trend-details2 {
         /* 優先表示順 */
         z-index: 1;
@@ -334,7 +334,7 @@ body {
 
 /* 商品名 */
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .trend-item h1 {
         /* フォント */
         font-family: Impact, 'Arial Narrow Bold', sans-serif;
@@ -371,7 +371,7 @@ body {
 
 /* 商品名カナ */
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .trend-item h2 {
         /* 文字サイズ */
         font-size: 2.5vw;
@@ -400,7 +400,7 @@ body {
 
 /* 各商品詳細_説明文 */
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .trend-item p {
         /* 文字サイズ */
         font-size: 2.5vw;
@@ -427,7 +427,7 @@ body {
 タイトル（お気に入り、注文履歴）
 ==================================================*/
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     /* タイトル_エリア */
     .title {
         /* 上下左右の余白 */
@@ -497,7 +497,7 @@ body {
 商品（お気に入り、注文履歴）
 ==================================================*/
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     /* 全体 */
     .item-pr {
         /* 並行配置 */
@@ -619,7 +619,7 @@ body {
 
 /* 全体設定 */
 
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 100px) and (max-width: 767px) {
     .slider_favorite,
     .slider_history {
         /* 非表示 */
